@@ -152,9 +152,7 @@ ggplot(Frecuencias, aes(x=N_sp_incluster_x, y=Foreing_incluster_x, label = rowna
 ~~~
 
 Resultado: Se grafica
+![](assets/Proyecto_BAPS-103f89da)
 
 x = Ratio de españoles en cluster
 y = Ratio de extranjeros en cluster
-
-
-![](assets/Proyecto_BAPS-103f89da)
