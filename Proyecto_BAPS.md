@@ -3,7 +3,8 @@
 - El alineamiento usado en este caso sera un alineamiento 1177 de linaje cuatro de genomas de pacientes de TB el mismo se utilizo para crear un filogenia con **iqtree**
 
 ### Generando tabla de Genotipos con Fastbaps (R)
-input: **run_alignment_no_resis_1177.fas**  
+input: **run_alignment_no_resis_1177.fas**
+
 Utilizamos el scrip llamado **"Proyecto"**
 ~~~
 #Libraries
@@ -38,6 +39,7 @@ Resultados
 
 ### Generacion de arbol filogenetico (ITOL)
 input: **run_alignment_no_resis_1177.fas.treefile**
+
 input: **Fastbapslvl2** (Archivo Itol)
 
 > No explico el proceso solo es crear un archivo ITOL
@@ -46,7 +48,9 @@ output: https://itol.embl.de/tree/16111121936428041608308653
 
 ### Generacion de tablas (R)
 Extraemos las columnas: ID y Level 2
+
 input: **Fastbaps**
+
 input: **Tabla: ID_Genotipo_Spain_Cluster**
 
 ~~~
@@ -160,17 +164,22 @@ ggplot(N_mayor_20_Sp_x_mayor_0.5, aes(x=N_sp_incluster_x, y=extranjeros_totaldec
 ~~~
 
 Resultado: Se grafica
+
 ![](assets/Proyecto_BAPS-db75662f.png)
 
 ![](assets/Proyecto_BAPS-d8cc7c01.jpeg)
 
 **x = Ratio de españoles en cluster**
+
 **y = Ratio extranjeros/totaldecasos_x**
 
 ### Comparacion de Genotipos
 Genotipo5 Carlos
+
 ![](assets/Proyecto_BAPS-37c40f42.png)
+
 BAPS6 Irving
+
 ![](assets/Proyecto_BAPS-84554545.png)
 
 ### Calculos de ORs
