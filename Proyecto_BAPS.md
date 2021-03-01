@@ -3,7 +3,7 @@
 - El alineamiento usado en este caso sera un alineamiento 1177 de linaje cuatro de genomas de pacientes de TB el mismo se utilizo para crear un filogenia con **iqtree**
 
 ### Generando tabla de Genotipos con Fastbaps (R)
-input: **run_alignment_no_resis_1177.fas**
+input: **run_alignment_no_resis_1177.fas**  
 Utilizamos el scrip llamado **"Proyecto"**
 ~~~
 #Libraries
@@ -166,3 +166,11 @@ Resultado: Se grafica
 
 **x = Ratio de españoles en cluster**
 **y = Ratio extranjeros/totaldecasos_x**
+
+### Comparacion de Genotipos
+Genotipo5 Carlos
+![](assets/Proyecto_BAPS-37c40f42.png)
+BAPS6 Irving
+![](assets/Proyecto_BAPS-84554545.png)
+
+### Calculos de ORs
