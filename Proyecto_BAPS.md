@@ -6,7 +6,7 @@
 input: **run_alignment_no_resis_1177.fas**
 
 Utilizamos el scrip llamado **"Proyecto"**
-~~~
+~~~R
 #Libraries
 library(fastbaps)
 library(ape)
@@ -26,7 +26,7 @@ baps.hc <- fast_baps(sparse.data)
 Fastbaps <- multi_res_baps(sparse.data, levels = 6)
 ~~~
 Resultados
-~~~
+~~~R
 > head(Fastbaps)
   Isolates Level 1 Level 2 Level 3 Level 4 Level 5 Level 6
 1      G01       1       3       7      24      67     115
@@ -53,7 +53,7 @@ input: **Fastbaps**
 
 input: **Tabla: ID_Genotipo_Spain_Cluster**
 
-~~~
+~~~R
 > head(Fastbaps_lvl2)
      ID Genotipo
 1 G1019        1
@@ -64,7 +64,7 @@ input: **Tabla: ID_Genotipo_Spain_Cluster**
 6 G1154        1
 ~~~
 
-~~~
+~~~R
 ## Realizar tablas de valores de Rhierbaps & Baps
 ## Libreria
 library(dplyr)
@@ -157,9 +157,9 @@ output: **Tabla: Frecuencias**
 
 
 ### Generacion de graficos (R)
-> No explico los parametros de ggplot2, pero tienen que ver con colores y posiciones de las etiquetas
+> Los graficos explican que se esta graficando. Sp_incluster vs. extranjeros/totaldecasos, es decir "Los casos españoles en clusters españoles" vs "Los casos extranjeros sobre el total de casos"
 
-~~~
+```R
 #Plots
 library(ggplot2)
 library(ggpubr)
@@ -181,8 +181,7 @@ ggplot(N_mayor_20_Sp_x_mayor_0.5, aes(x=N_sp_incluster_x, y=extranjeros_totaldec
     theme(plot.title=element_text(hjust = 0.5, size = 12)) +
     geom_text(vjust = c(-1,-1,-1,-1,-1,-1,-1,-1), hjust = c(0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5), size = 3)
   theme(axis.text=element_text(size=11),axis.title.x = element_text (size=14, margin = margin(t = 8, r = 0, b = 0, l = 0)),axis.title.y = element_text(size=14, margin = margin(t = 0, r = 5, b = 0, l = 0 )))
-
-~~~
+```
 
 Resultado: Se grafica
 
@@ -195,12 +194,103 @@ Resultado: Se grafica
 **y = Ratio extranjeros/totaldecasos_x**
 
 ### Comparacion de Genotipos
-Genotipo5 Carlos
+Comparamos contra los genotipos obtenidos por Irving y observamos que contienen las mismas muestras.
 
+Genotipo5 Carlos
 ![](assets/Proyecto_BAPS-37c40f42.png)
 
 BAPS6 Irving
-
 ![](assets/Proyecto_BAPS-84554545.png)
 
 ### Calculos de ORs
+input: **Tabla Frecuencias**
+
+Generamos un Subset para tener claro el calculo del p-valor.
+
+|FIELD1      |Genotipo                          |N_incluster   |N                             |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|
+|------------|----------------------------------|--------------|------------------------------|------------|---------------------|--------------------------------|
+|1           |1                                 |59            |109                           |39          |7                    |52                              |
+|2           |2                                 |118           |218                           |69          |25                   |93                              |
+|4           |4                                 |29            |89                            |19          |10                   |19                              |
+|5           |5                                 |31            |66                            |26          |15                   |16                              |
+|7           |7                                 |49            |79                            |38          |18                   |31                              |
+|8           |8                                 |69            |151                           |51          |35                   |34                              |
+|9           |9                                 |33            |75                            |26          |12                   |21                              |
+|15          |15                                |8             |30                            |6           |2                    |6
+
+Contruimos una matriz general:
+
+|FIELD1      |Spanish_cluster_cases             |NClustercasesSpanishclustercases|
+|------------|----------------------------------|--------------------------------|
+|Baps_01     |7                                 |52                              |
+|Baps_02     |25                                |93                              |
+|Baps_04     |10                                |19                              |
+|Baps_05     |15                                |16                              |
+|Baps_07     |18                                |31                              |
+|Baps_08     |35                                |34                              |
+|Baps_09     |12                                |21                              |
+|Baps_15     |2                                 |6                               |
+
+Contruimos tablas de 2x2:
+```R
+# Veamos para elegir las filas de la matrix hacemos asi: [c(Genotipo, Genotipo de referencia),]
+Gen_RefGen <- matrix_genotipos[c(1,2),]
+
+```
+|FIELD1      |Spanish_cluster_cases             |NClustercasesSpanishclustercases|
+|------------|----------------------------------|--------------------------------|
+|Baps_01     |7                                 |52                              |
+|Baps_02     |25                                |93                              |
+
+
+
+Realizamos el calculo del p-valor mediante una prueba de fisher de dos y una cola. Apuntamos los resultados y generamos tablas. Tome como refecnia los Baps 02/15
+
+```R
+fisher.test(Gen_RefGen)
+fisher.test(Gen_RefGen, alternative = "greater")
+```
+##### Transmission_in_Spanish_ref2
+|FIELD1      |Genotipo                          |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|pvalue_two_sided|pvalue_one_sided|
+|------------|----------------------------------|--------------|---|------------|---------------------|--------------------------------|----------------|----------------|
+|1           |1                                 |59            |109|39          |7                    |52                              |0.1505          |0.9613          |
+|2           |2                                 |118           |218|69          |25                   |93                              |reference       |reference       |
+|4           |4                                 |29            |89 |19          |10                   |19                              |0.148           |0.1054          |
+|5           |5                                 |31            |66 |26          |15                   |16                              |0.005309        |0.003248        |
+|7           |7                                 |49            |79 |38          |18                   |31                              |0.05113         |0.03055         |
+|8           |8                                 |69            |151|51          |35                   |34                              |0.00004389      |0.00003384      |
+|9           |9                                 |33            |75 |26          |12                   |21                              |0.1071          |0.06191         |
+|15          |15                                |8             |30 |6           |2                    |6                               |0.68            |0.5436          |
+
+##### Transmission_in_Spanish_ref15
+|FIELD1      |Genotipo                          |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|pvalue_two_sided|pvalue_one_sided|
+|------------|----------------------------------|--------------|---|------------|---------------------|--------------------------------|----------------|----------------|
+|1           |1                                 |59            |109|39          |7                    |52                              |0.2912          |0.9322          |
+|2           |2                                 |118           |218|69          |25                   |93                              |0.68            |0.7695          |
+|4           |4                                 |29            |89 |19          |10                   |19                              |1               |0.4802          |
+|5           |5                                 |31            |66 |26          |15                   |16                              |0.426           |0.2173          |
+|7           |7                                 |49            |79 |38          |18                   |31                              |0.6993          |0.4153          |
+|8           |8                                 |69            |151|51          |35                   |34                              |0.2655          |0.1579          |
+|9           |9                                 |33            |75 |26          |12                   |21                              |0.6925          |0.4353          |
+|15          |15                                |8             |30 |6           |2                    |6                               |reference       |reference       |
+
+Conclusiones : Hay un favoritismo por parte de algunos genotipos a enconytrarse en transmicion dentro de clusters españoles.
+
+output: **Transmission_in_Spanish_ref2 & Transmission_in_Spanish_ref15**
+
+### Tablas de cluster
+Obtuve estos datos de forma manual **ver genotipo 8**
+
+|FIELD1      |Genotipo                          |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|Spanish_clusters2.0|Mixed_clusters|Total_clusters|
+|------------|----------------------------------|--------------|---|------------|---------------------|-------------------|--------------|--------------|
+|1           |1                                 |59            |109|39          |7                    |2                  |12            |14            |
+|2           |2                                 |118           |218|69          |25                   |8                  |19            |27            |
+|4           |4                                 |29            |89 |19          |10                   |3                  |6             |9             |
+|5           |5                                 |31            |66 |26          |15                   |4                  |3             |7             |
+|7           |7                                 |49            |79 |38          |18                   |4                  |7             |11            |
+|8           |8                                 |69            |151|51          |35                   |14                 |6             |20            |
+|9           |9                                 |33            |75 |26          |12                   |4                  |5             |9             |
+|15          |15                                |8             |30 |6           |2                    |1                  |2             |3             |
+
+
+### Perspectivas y conclusiones
