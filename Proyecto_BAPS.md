@@ -250,6 +250,20 @@ Realizamos el calculo del p-valor mediante una prueba de fisher de dos y una col
 fisher.test(Gen_RefGen)
 fisher.test(Gen_RefGen, alternative = "greater")
 ```
+##### Transmission_in_Spanish_ref1
+
+|Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|pvalue_two_sided|pvalue_one_sided|Baps_Irvin|
+|--------|-----------|---|------------|---------------------|--------------------------------|----------------|----------------|----------|
+|1       |59         |109|39          |7                    |52                              |reference       |reference       |BAPS_03   |
+|2       |118        |218|69          |25                   |93                              |0.1505          |0.0925          |BAPS_03   |
+|4       |29         |89 |19          |10                   |19                              |0.01981         |0.01417         |BAPS_07/08|
+|5       |31         |66 |26          |15                   |16                              |0.0002373       |0.0002205       |BAPS_06   |
+|7       |49         |79 |38          |18                   |31                              |0.002881        |0.002288        |BAPS_07   |
+|8       |69         |151|51          |35                   |34                              |3.598e-06       |1.922e-06       |BAPS_09   |
+|9       |33         |75 |26          |12                   |21                              |0.007618        |0.006622        |BAPS_11   |
+|15      |8          |30 |6           |2                    |6                               |0.2912          |0.2912          |BAPS_02   |
+
+
 ##### Transmission_in_Spanish_ref2
 |FIELD1      |Genotipo                          |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|pvalue_two_sided|pvalue_one_sided|
 |------------|----------------------------------|--------------|---|------------|---------------------|--------------------------------|----------------|----------------|
@@ -291,6 +305,8 @@ Obtuve estos datos de forma manual **ver genotipo 8**
 |8           |8                                 |69            |151|51          |35                   |14                 |6             |20            |
 |9           |9                                 |33            |75 |26          |12                   |4                  |5             |9             |
 |15          |15                                |8             |30 |6           |2                    |1                  |2             |3             |
+
+### Equivalencia de genotipos Baps Carlos con Baps Irving
 
 
 ### Perspectivas y conclusiones
