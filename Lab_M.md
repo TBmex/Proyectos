@@ -1,4 +1,4 @@
-# **Calendario de Lab meting** :atom:
+# **Calendario de Lab meeting** :atom:
 
 
 ## Abril
