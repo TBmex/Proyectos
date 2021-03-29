@@ -1,4 +1,5 @@
-# **Calendario de Lab meeting** :atom:
+![](assets/Lab_M-7c6aedc6.png)
+## **Calendario de Lab meeting** :atom:
 
 
 ## Abril
@@ -41,4 +42,4 @@
 
 ![](assets/Lab_M-5c6ef917.jpg)
 
-:mexico: :scientist: :woman_scientist: :alembic: :petri_dish: :microscope: :test_tube: :dna: :pill: :drop_of_blood: :satellite:
+:mexico: :scientist: :woman_scientist: :alembic: :petri_dish: :microscope: :test_tube: :dna: :pill: :drop_of_blood: :satellite:![](assets/Lab_M-7c6aedc6.png)![](assets/Lab_M-7c6aedc6.png)
