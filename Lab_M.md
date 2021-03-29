@@ -41,4 +41,4 @@
 
 ![](assets/Lab_M-5c6ef917.jpg)
 
-:mexico:
+:mexico: :scientist: :woman_scientist: :alembic: :petri_dish: :microscope: :test_tube: :dna: :pill: :drop_of_blood: :satellite:
