@@ -4,36 +4,21 @@
 ## Abril
 
 #### Fecha: Miercoles 31 abril
-- Afortunado: **Alvaro Chi** :es:  :mexico:
-- Tema: "Paper de coronavirus o la última cosa de TB" :boom:
-- Modalidad:
+- Afortunado: **Álvaro Chiner-Oms** :es: :dna: [ORCID](https://orcid.org/0000-0002-0463-0101)
+- Tema: "Paper de coronavirus o la última cosa de TB" :dna:
+- Modalidad: Lab meting!
 - Links: [Click para Zoom](http://www.limni.net) y [Click para Paper](http://www.limni.net)
 
-#### Fecha: Miercoles 31 abril
 
-- Afortunado: **Alvaro Chi** :es:  :mexico:
-- Tema: "Paper de coronavirus o la última cosa de TB" :boom:
-- Modalidad:
-- Links: [Click para Zoom](http://www.limni.net) y [Click para Paper](http://www.limni.net)
 
 ## Mayo
 
-#### Fecha: Miercoles 31 abril
-- Afortunado: **Alvaro Chi** :es:  :mexico:
-- Tema: "Paper de coronavirus o la última cosa de TB" :boom:
-- Modalidad:
-- Links: [Click para Zoom](http://www.limni.net) y [Click para Paper](http://www.limni.net)
-
-#### Fecha: Miercoles 31 abril
-
-- Afortunado: **Alvaro Chi** :es:  :mexico:
-- Tema: "Paper de coronavirus o la última cosa de TB" :boom:
-- Modalidad:
-- Links: [Click para Zoom](http://www.limni.net) y [Click para Paper](http://www.limni.net)
 ## Junio
 
 ## Julio
 
 ## Agosto
 
-![](assets/Lab_M-4836b679.JPG)
+![](assets/Lab_M-5c6ef917.jpg)
+
+:mexico:
