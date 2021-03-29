@@ -3,14 +3,33 @@
 
 ## Abril
 
-- Tema: "Paper de coronavirus que hemos escrito o la última cosa de TB que tengo pendiente" :boom:
-- Links: [Zoom](http://www.limni.net), [Paper](http://www.limni.net)
+#### Fecha: Miercoles 31 abril
+- Afortunado: **Alvaro Chi** :es:  :mexico:
+- Tema: "Paper de coronavirus o la última cosa de TB" :boom:
 - Modalidad:
-- Afortunado: Alvaro Chi :es:  :mexico:
-- Fecha: Miercoles 31 abril
+- Links: [Click para Zoom](http://www.limni.net) y [Click para Paper](http://www.limni.net)
+
+#### Fecha: Miercoles 31 abril
+
+- Afortunado: **Alvaro Chi** :es:  :mexico:
+- Tema: "Paper de coronavirus o la última cosa de TB" :boom:
+- Modalidad:
+- Links: [Click para Zoom](http://www.limni.net) y [Click para Paper](http://www.limni.net)
 
 ## Mayo
 
+#### Fecha: Miercoles 31 abril
+- Afortunado: **Alvaro Chi** :es:  :mexico:
+- Tema: "Paper de coronavirus o la última cosa de TB" :boom:
+- Modalidad:
+- Links: [Click para Zoom](http://www.limni.net) y [Click para Paper](http://www.limni.net)
+
+#### Fecha: Miercoles 31 abril
+
+- Afortunado: **Alvaro Chi** :es:  :mexico:
+- Tema: "Paper de coronavirus o la última cosa de TB" :boom:
+- Modalidad:
+- Links: [Click para Zoom](http://www.limni.net) y [Click para Paper](http://www.limni.net)
 ## Junio
 
 ## Julio
