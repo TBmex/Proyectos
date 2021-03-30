@@ -26,24 +26,24 @@ Como se elige al Afortunado: [Click aqui](https://www.random.org/lists/)
 
 Participantes:
 ~~~
-    Francisco
-    Ester
-    Vicky
-    Carla
-    Carlos
-    Miguel
-    Manoli
-    Luis
-    Mariana
-    Irving
-    Iñaki
+  Francisco
+  Ester
+  Vicky
+  Carla
+  Carlos
+  Miguel
+  Manoli
+  Luis
+  Mariana
+  Irving
+  Iñaki
 ~~~
 
 No Participantes:
 
 ~~~
-Alvaro
-Ana
-Santi?
-Inma?
+  Alvaro
+  Ana
+  Santi?
+  Inma?
 ~~~
