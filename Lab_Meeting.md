@@ -32,7 +32,6 @@ Como se elige al Afortunado: [Click aqui](https://www.random.org/lists/)
   - Irving
   - Iñaki
 
-
 ##### No Participantes?:
 
   - Alvaro
