@@ -5,7 +5,7 @@
 ### Generando tabla de Genotipos con Fastbaps (R)
 input: **run_alignment_no_resis_1177.fas**
 
-Utilizamos el scrip llamado **"Proyecto"**
+Utilizamos el scrip llamado **"Proyecto"** donde se ecuentran lso parametros previamente elegidos para correr el Baps
 ~~~r
 #Libraries
 library(fastbaps)
@@ -25,7 +25,7 @@ baps.hc <- fast_baps(sparse.data)
 #Bayesian hierarchical partition
 Fastbaps <- multi_res_baps(sparse.data, levels = 6)
 ~~~
-Resultados
+Resultados: obtenemos una tabla con los genotipos a varios niveles
 
 ~~~r
 > head(Fastbaps)
@@ -41,19 +41,20 @@ Resultados
 ### Generacion de arbol filogenetico (ITOL)
 input: **run_alignment_no_resis_1177.fas.treefile**
 
-input: **Fastbapslvl2** (Archivo Itol)
+input: **Fastbapslvl2** (Archivo Itol), para graficar el lvl2 de la tabla anterior.
 
 > No explico el proceso solo es crear un archivo ITOL
 
 output: https://itol.embl.de/tree/16111121936428041608308653
 
 ### Generacion de tablas (R)
-Extraemos las columnas: ID y Level 2
+Extraemos las columnas: ID y Level 2, para obtener data referente a cluster y calcular frecuencias.
 
 input: **Fastbaps**
 
-input: **Tabla: ID_Genotipo_Spain_Cluster**
+input: **Tabla: ID_Genotipo_Spain_Cluster** (subset de la tabla general del proyecto EPI_VAL)
 
+Asignamos las muestras a sus genotipos.
 ~~~r
 > head(Fastbaps_lvl2)
      ID Genotipo
@@ -135,7 +136,7 @@ rm (x, y, Freq, Freq_spain, ID_Genotipo_Spain, Genotipo_Spain, Spain_Genotipo_in
 
 ~~~
 
-output: **Tabla: Frecuencias**
+output: **Tabla: Frecuencias de los 16 genotipos del baps. respecto a porcentajes de casos en cluster, españoles, extranjeros, total de casos etc...**
 
 |Genotipo|N  |Sp |No_sp|Sp_x  |Sp_incluster|Sp_nocluster|Sp_incluster_x|N_incluster|N_sp_incluster_x|Foreing_incluster|Foreing_incluster_x|extranjeros_totaldecasos_x|
 |--------|---|---|-----|------|------------|------------|--------------|-----------|----------------|-----------------|-------------------|--------------------------|
@@ -158,7 +159,7 @@ output: **Tabla: Frecuencias**
 
 
 ### Generacion de graficos (R)
-> Los graficos explican que se esta graficando. Sp_incluster vs. extranjeros/totaldecasos, es decir "Los casos españoles en clusters españoles" vs "Los casos extranjeros sobre el total de casos"
+> Se esta graficando. Sp_incluster vs. extranjeros/totaldecasos, es decir: "Los casos españoles en clusters españoles" vs "Los casos extranjeros sobre el total de casos"
 
 ```r
 #Plots
@@ -198,7 +199,7 @@ Resultado: Se grafica
 ### Calculos de ORs
 input: **Tabla Frecuencias**
 
-Generamos un Subset para tener claro el calculo del p-valor.
+Generamos un Subset para calcular el p-valor de los 16 genotipos con la svariables de los graficos anteriores.
 
 |FIELD1      |Genotipo                          |N_incluster   |N                             |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|
 |------------|----------------------------------|--------------|------------------------------|------------|---------------------|--------------------------------|
@@ -211,7 +212,7 @@ Generamos un Subset para tener claro el calculo del p-valor.
 |9           |9                                 |33            |75                            |26          |12                   |21                              |
 |15          |15                                |8             |30                            |6           |2                    |6
 
-Contruimos una matriz general:
+Contruimos una matriz general para el calculo de OR:
 
 |FIELD1      |Spanish_cluster_cases             |NClustercasesSpanishclustercases|
 |------------|----------------------------------|--------------------------------|
@@ -224,7 +225,7 @@ Contruimos una matriz general:
 |Baps_09     |12                                |21                              |
 |Baps_15     |2                                 |6                               |
 
-Contruimos tablas de 2x2:
+Contruimos tablas de 2x2 para cada operacion:
 ```{r}
 # Veamos para elegir las filas de la matrix hacemos asi: [c(Genotipo, Genotipo de referencia),]
 Gen_RefGen <- matrix_genotipos[c(1,2),]
@@ -237,7 +238,7 @@ Gen_RefGen <- matrix_genotipos[c(1,2),]
 
 
 
-Realizamos el calculo del p-valor mediante una prueba de fisher de dos y una cola. Apuntamos los resultados y generamos tablas. Tome como refecnia los Baps 02/15
+Realizamos el calculo del p-valor mediante una prueba de fisher de dos y una cola. Apuntamos los resultados y generamos las siguientes tablas. Tome como refencia los Baps 02.
 
 ```{r}
 fisher.test(Gen_RefGen)
@@ -275,6 +276,8 @@ output: **Transmission_in_Spanish_ref1 & Transmission_in_Spanish_ref2**
 
 ### Tablas de cluster
 Obtuve estos datos de forma manual **ver genotipo 8**
+
+La tabal sirve para ver cuantos clusters son españoles o mixtos referentes al total de clusters en cada genotipo (ultimas 3 columnas).
 
 |Genotipo                          |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|Spanish_clusters2.0|Mixed_clusters|Total_clusters|
 |----------------------------------|--------------|---|------------|---------------------|-------------------|--------------|--------------|
