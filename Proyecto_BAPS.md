@@ -172,12 +172,27 @@ output: **Tabla de frecuencias de los 16 genotipos del baps**
 
 ### Generacion de graficos (R)
 Se grafica:
+- **N_sp_incluster_x** (x) = Proporcion de "Sp_incluster" en relacion a "N_incluster"
+- **extranjeros_totaldecasos_x** (y) = Proporcion de "No_sp" en relacion a "N"
 
-**N_sp_incluster_x** = Proporcion de "Sp_incluster" en relacion a "N_incluster"
-
-**VS** 
-
-**extranjeros_totaldecasos_x** = Proporcion de "No_sp" en relacion a "N"
+|Genotipo|N_sp_incluster_x|extranjeros_totaldecasos_x|
+|--------|----------------|--------------------------|
+|1       |0.6610          |0.3853                    |
+|2       |0.5847          |0.4495                    |
+|3       |0.5814          |0.5000                    |
+|4       |0.6552          |0.3483                    |
+|5       |0.8387          |0.2273                    |
+|6       |0.5574          |0.5510                    |
+|7       |0.7755          |0.3038                    |
+|8       |0.7391          |0.2715                    |
+|9       |0.7879          |0.2667                    |
+|10      |0.5741          |0.5208                    |
+|11      |0.1000          |0.8095                    |
+|12      |0.5000          |0.5000                    |
+|13      |0.5714          |0.6667                    |
+|14      |0.5000          |0.5143                    |
+|15      |0.7500          |0.3667                    |
+|16      |0.0909          |0.8889                    |
 
 ```r
 #Plots
