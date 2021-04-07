@@ -173,7 +173,11 @@ output: **Tabla de frecuencias de los 16 genotipos del baps**
 ### Generacion de graficos (R)
 Se grafica:
 
-**N_sp_incluster_x** = Proporcion de "Sp_incluster" en relacion a "N_incluster" VS **extranjeros_totaldecasos_x** = Proporcion de "No_sp" en relacion a "N"
+**N_sp_incluster_x** = Proporcion de "Sp_incluster" en relacion a "N_incluster"
+
+**VS** 
+
+**extranjeros_totaldecasos_x** = Proporcion de "No_sp" en relacion a "N"
 
 ```r
 #Plots
@@ -317,7 +321,7 @@ Obtuve estos datos de forma manual **ver genotipo 8**
 - **N** = Total de aislados
 - **Sp_incluster** =  Numero de españoles en clusters de transmicion
 - **Spanish_cluster_cases** = Numero de aislados españoles en clusters de solo españoles
-- **Spanish_clusters** =  Numero de clusters españoles
+- **Spanish_clusters** =  Numero de clusters de solo españoles
 - **Mixed_clusters** = Numero de clusters mixtos
 - **Total_clusters** = Total de clusters
 
