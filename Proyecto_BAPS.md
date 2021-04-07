@@ -281,32 +281,18 @@ Realizamos el calculo del p-valor mediante una prueba de fisher de dos y una col
 fisher.test(Gen_RefGen)
 fisher.test(Gen_RefGen, alternative = "greater")
 ```
-##### Transmission_in_Spanish_ref1
-
-|Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|N_incluster - Spanish_cluster_cases|pvalue_two_sided|pvalue_one_sided|Baps_Irvin|
-|--------|-----------|---|------------|---------------------|--------------------------------|----------------|----------------|----------|
-|1       |59         |109|39          |7                    |52                              |reference       |reference       |BAPS_03   |
-|2       |118        |218|69          |25                   |93                              |0.1505          |0.0925          |BAPS_03   |
-|4       |29         |89 |19          |10                   |19                              |0.01981         |0.01417         |BAPS_08|
-|5       |31         |66 |26          |15                   |16                              |0.0002373       |0.0002205       |BAPS_06   |
-|7       |49         |79 |38          |18                   |31                              |0.002881        |0.002288        |BAPS_07   |
-|8       |69         |151|51          |35                   |34                              |3.598e-06       |1.922e-06       |BAPS_09   |
-|9       |33         |75 |26          |12                   |21                              |0.007618        |0.006622        |BAPS_11   |
-|15      |8          |30 |6           |2                    |6                               |0.2912          |0.2912          |BAPS_02   |
-
-
 ##### Transmission_in_Spanish_ref2
-|Genotipo |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|N_incluster - Spanish_cluster_cases|pvalue_two_sided|pvalue_one_sided|
-|----------------------------------|--------------|---|------------|---------------------|--------------------------------|----------------|----------------|
-|1        |59            |109|39          |7                    |52                              |0.1505          |0.9613          |
-|2        |118           |218|69          |25                   |93                              |reference       |reference       |
-|4        |29            |89 |19          |10                   |19                              |0.148           |0.1054          |
-|5        |31            |66 |26          |15                   |16                              |0.005309        |0.003248        |
-|7        |49            |79 |38          |18                   |31                              |0.05113         |0.03055         |
-|8        |69            |151|51          |35                   |34                              |0.00004389      |0.00003384      |
-|9        |33            |75 |26          |12                   |21                              |0.1071          |0.06191         |
-|15       |8             |30 |6           |2                    |6                               |0.68            |0.5436          |
 
+|Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|N_incluster - Spanish_cluster_cases|Odds_ratio|confidence_interval|pvalue_two_sided|pvalue_one_sided|
+|--------|-----------|---|------------|---------------------|--------------------------------|----------|---------------------|----------------|----------------|
+|1       |59         |109|39          |7                    |52                              |0.5025 |0.1715 - 1.3009 |0.1505          |0.9613          |
+|2       |118        |218|69          |25                   |93                              |reference |reference    |reference       |reference       |
+|4       |29         |89 |19          |10                   |19                              |1.9480  |0.7147 - 5.0943|0.148           |0.1054          |
+|5       |31         |66 |26          |15                   |16                              |3.4530  |1.3860 - 8.6536|0.005309        |0.003248        |
+|7       |49         |79 |38          |18                   |31                              |2.1492  |0.9675 - 4.7445|0.05113         |0.03055         |
+|8       |69         |151|51          |35                   |34                              |3.7990  |1.9090 - 7.6937|0.00004389      |0.00003384      |
+|9       |33         |75 |26          |12                   |21                              |2.1139  |0.8299 - 5.2497|0.1071          |0.06191         |
+|15      |8          |30 |6           |2                    |6                               |1.2377  |0.1154 - 7.4874|0.68            |0.5436          |
 
 - **Genotipo** = Genotipo
 - **N_incluster** = Total de aislados en clusters de transmición
@@ -315,7 +301,7 @@ fisher.test(Gen_RefGen, alternative = "greater")
 - **Spanish_cluster_cases** = Numero de aislados españoles en clusters de solo españoles
 - **N_incluster - Spanish_cluster_cases** = Numero de aislados que no pertenecen a clusters de solo españoles
 
-output: **Transmission_in_Spanish_ref1 & Transmission_in_Spanish_ref2**
+output: **Transmission_in_Spanish_ref2**
 
 ### Tabla de cluster
 Obtuve estos datos de forma manual **ver genotipo 8**
