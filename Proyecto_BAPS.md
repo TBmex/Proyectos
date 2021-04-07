@@ -1,11 +1,12 @@
-## Baps Valencia (R, iqtree)
-- El programa utilizado es **Fastbaps** el cual parte de un alineamiento previamente obtenido por el pipeline.
-- El alineamiento usado en este caso sera un alineamiento 1177 de linaje cuatro de genomas de pacientes de TB el mismo se utilizo para crear un filogenia con **iqtree**
+## Baps Valencia
+- El proyecto tiene como objetivo identificar genotipos que se encuentren en transmición dentro de la poblacion española.
+- El programa utilizado para la identificacion de los genotipos es **Fastbaps** el cual toma como "input" un alineamiento previamente obtenido ".fas".
+- El alineamiento usado en este caso sera un alineamiento de 1177 aislados de linaje cuatro de genomas de pacientes de TB.
 
 ### Generando tabla de Genotipos con Fastbaps (R)
 input: **run_alignment_no_resis_1177.fas**
 
-Utilizamos el scrip llamado **"Proyecto"** donde se ecuentran lso parametros previamente elegidos para correr el Baps
+Generamos y utilizamos el scrip llamado **"Proyecto"** donde detallamos los parametros previamente elegidos para correr el Baps
 ~~~r
 #Libraries
 library(fastbaps)
@@ -25,7 +26,7 @@ baps.hc <- fast_baps(sparse.data)
 #Bayesian hierarchical partition
 Fastbaps <- multi_res_baps(sparse.data, levels = 6)
 ~~~
-Resultados: obtenemos una tabla con los genotipos a varios niveles
+output: obtenemos una tabla con los genotipos a varios niveles, de la cual elegimos el Level2 que esta formado por 16 genotipos.
 
 ~~~r
 > head(Fastbaps)
@@ -38,21 +39,19 @@ Resultados: obtenemos una tabla con los genotipos a varios niveles
 6    G1002       2       6      18      57     138     212
 ~~~
 
-### Generacion de arbol filogenetico (ITOL)
+### Generacion de arbol filogenetico del lvl2 del Baps (iTOL)
 input: **run_alignment_no_resis_1177.fas.treefile**
 
 input: **Fastbapslvl2** (Archivo Itol), para graficar el lvl2 de la tabla anterior.
 
-> No explico el proceso solo es crear un archivo ITOL
+> No explico el proceso solo es crear un archivo iTOL
 
 output: https://itol.embl.de/tree/16111121936428041608308653
 
-### Generacion de tablas (R)
-Extraemos las columnas: ID y Level 2, para obtener data referente a cluster y calcular frecuencias.
+### Generacion de tablas, Datos de la DGSP vs Genotipos Baps(R)
+input: **Tabla de genotipos de Fastbaps**
 
-input: **Fastbaps**
-
-input: **Tabla: ID_Genotipo_Spain_Cluster** (subset de la tabla general del proyecto EPI_VAL)
+input: **Tabla: ID_Genotipo_Spain_Cluster** (subset de la tabla general del proyecto de Valencia)
 
 Asignamos las muestras a sus genotipos.
 ~~~r
@@ -136,7 +135,7 @@ rm (x, y, Freq, Freq_spain, ID_Genotipo_Spain, Genotipo_Spain, Spain_Genotipo_in
 
 ~~~
 
-output: **Tabla: Frecuencias de los 16 genotipos del baps. respecto a porcentajes de casos en cluster, españoles, extranjeros, total de casos etc...**
+output: **Tabla de frecuencias de los 16 genotipos del baps**
 
 |Genotipo|N  |Sp |No_sp|Sp_x  |Sp_incluster|Sp_nocluster|Sp_incluster_x|N_incluster|N_sp_incluster_x|Foreing_incluster|Foreing_incluster_x|extranjeros_totaldecasos_x|
 |--------|---|---|-----|------|------------|------------|--------------|-----------|----------------|-----------------|-------------------|--------------------------|
@@ -157,9 +156,24 @@ output: **Tabla: Frecuencias de los 16 genotipos del baps. respecto a porcentaje
 |15      |30 |19 |11   |0.6333|6           |13          |0.3158        |8          |0.75            |2                |0.25               |0.3667                    |
 |16      |27 |3  |24   |0.1111|1           |2           |0.3333        |11         |0.0909          |10               |0.9091             |0.8889                    |
 
+- **Genotipo** = Genotipo
+- **N** = Total de aislados
+- **Sp** = Total de aislados españoles
+- **No_sp** = Total de aislados NO españoles
+- **Sp_x** = Proporcion de españoles en el genotipo
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Sp_nocluster** =  Numero de españoles que no se encuentran en clusters de transmición
+- **Sp_incluster_x** = Proporcion de **"Sp_incluster"** en relacion a **"Sp"**
+- **N_incluster** = Total de aislados en clusters de transmición
+- **N_sp_incluster_x** = Proporcion de **"Sp_incluster"** en relacion a **"N_incluster"**
+- **Foreing_incluster** = Numero de NO españoles en clusters de transmición
+- **Foreing_incluster_x** = Proporcion de **"Foreing_incluster"** en relacion a **"N_incluster"**
+- **extranjeros_totaldecasos_x** = Proporcion de **"No_sp"** en relacion a **"N"**
 
 ### Generacion de graficos (R)
-> Se esta graficando. Sp_incluster vs. extranjeros/totaldecasos, es decir: "Los casos españoles en clusters españoles" vs "Los casos extranjeros sobre el total de casos"
+Se grafica:
+
+**N_sp_incluster_x** = Proporcion de "Sp_incluster" en relacion a "N_incluster" VS **extranjeros_totaldecasos_x** = Proporcion de "No_sp" en relacion a "N"
 
 ```r
 #Plots
@@ -184,37 +198,37 @@ ggplot(N_mayor_20_Sp_x_mayor_0.5, aes(x=N_sp_incluster_x, y=extranjeros_totaldec
     geom_text(vjust = c(-1,-1,-1,-1,-1,-1,-1,-1), hjust = c(0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5), size = 3)
   theme(axis.text=element_text(size=11),axis.title.x = element_text (size=14, margin = margin(t = 8, r = 0, b = 0, l = 0)),axis.title.y = element_text(size=14, margin = margin(t = 0, r = 5, b = 0, l = 0 )))
 ```
-
-Resultado: Se grafica
+output:
 
 ![](assets/Proyecto_BAPS-db75662f.png)
 
 ![](assets/Proyecto_BAPS-d8cc7c01.jpeg)
 
-**x = Ratio españoles en clusters de solo españoles / casos en cluster**
-
-**y = Ratio extranjeros / totaldecasos**
-
-
 ### Calculos de ORs
-input: **Tabla Frecuencias**
+input: **Tabla de frecuencias de los 16 genotipos del baps**
 
-Generamos un Subset para calcular el p-valor de los 16 genotipos con la svariables de los graficos anteriores.
+Generamos un Subset para calcular el p-valor de los 16 genotipos
 
-|FIELD1      |Genotipo                          |N_incluster   |N                             |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|
-|------------|----------------------------------|--------------|------------------------------|------------|---------------------|--------------------------------|
-|1           |1                                 |59            |109                           |39          |7                    |52                              |
-|2           |2                                 |118           |218                           |69          |25                   |93                              |
-|4           |4                                 |29            |89                            |19          |10                   |19                              |
-|5           |5                                 |31            |66                            |26          |15                   |16                              |
-|7           |7                                 |49            |79                            |38          |18                   |31                              |
-|8           |8                                 |69            |151                           |51          |35                   |34                              |
-|9           |9                                 |33            |75                            |26          |12                   |21                              |
-|15          |15                                |8             |30                            |6           |2                    |6
+|Genotipo                          |N_incluster   |N                             |Sp_incluster|Spanish_cluster_cases|N_incluster - Spanish_cluster_cases|
+|----------------------------------|--------------|------------------------------|------------|---------------------|--------------------------------|
+|1                                 |59            |109                           |39          |7                    |52                              |
+|2                                 |118           |218                           |69          |25                   |93                              |
+|4                                 |29            |89                            |19          |10                   |19                              |
+|5                                 |31            |66                            |26          |15                   |16                              |
+|7                                 |49            |79                            |38          |18                   |31                              |
+|8                                 |69            |151                           |51          |35                   |34                              |
+|9                                 |33            |75                            |26          |12                   |21                              |
+|15                                |8             |30                            |6           |2                    |6
+
+- **Genotipo** = Genotipo
+- **N** = Total de aislados
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Spanish_cluster_cases** = Numero de españoles en clusters de solo españoles
+- **N_incluster - Spanish_cluster_cases** = Numero de aislados que no pertenecen a clusters de solo españoles
 
 Contruimos una matriz general para el calculo de OR:
 
-|FIELD1      |Spanish_cluster_cases             |NClustercasesSpanishclustercases|
+|Genotipo      |Spanish_cluster_cases             |N_incluster - Spanish_cluster_cases|
 |------------|----------------------------------|--------------------------------|
 |Baps_01     |7                                 |52                              |
 |Baps_02     |25                                |93                              |
@@ -225,20 +239,24 @@ Contruimos una matriz general para el calculo de OR:
 |Baps_09     |12                                |21                              |
 |Baps_15     |2                                 |6                               |
 
+- **Genotipo** = Genotipo
+- **Spanish_cluster_cases** = Numero de españoles en clusters de solo españoles
+- **N_incluster - Spanish_cluster_cases** = Numero de aislados que no pertenecen a clusters de solo españoles
+
 Contruimos tablas de 2x2 para cada operacion:
 ```{r}
 # Veamos para elegir las filas de la matrix hacemos asi: [c(Genotipo, Genotipo de referencia),]
 Gen_RefGen <- matrix_genotipos[c(1,2),]
 
 ```
-|Genotipo      |Spanish_cluster_cases             |NClustercasesSpanishclustercases|
+|Genotipo      |Spanish_cluster_cases             |N_incluster - Spanish_cluster_cases|
 |------------|----------------------------------|--------------------------------|
 |Baps_01     |7                                 |52                              |
 |Baps_02     |25                                |93                              |
 
 
 
-Realizamos el calculo del p-valor mediante una prueba de fisher de dos y una cola. Apuntamos los resultados y generamos las siguientes tablas. Tome como refencia los Baps 02.
+Realizamos el calculo del p-valor mediante una prueba de fisher de dos y una cola. Apuntamos los resultados y generamos las siguientes tablas. Tome como refencia los Baps 02, aunque probamos varias opciones.
 
 ```{r}
 fisher.test(Gen_RefGen)
@@ -246,7 +264,7 @@ fisher.test(Gen_RefGen, alternative = "greater")
 ```
 ##### Transmission_in_Spanish_ref1
 
-|Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|pvalue_two_sided|pvalue_one_sided|Baps_Irvin|
+|Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|N_incluster - Spanish_cluster_cases|pvalue_two_sided|pvalue_one_sided|Baps_Irvin|
 |--------|-----------|---|------------|---------------------|--------------------------------|----------------|----------------|----------|
 |1       |59         |109|39          |7                    |52                              |reference       |reference       |BAPS_03   |
 |2       |118        |218|69          |25                   |93                              |0.1505          |0.0925          |BAPS_03   |
@@ -259,7 +277,7 @@ fisher.test(Gen_RefGen, alternative = "greater")
 
 
 ##### Transmission_in_Spanish_ref2
-|Genotipo |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|NClustercasesSpanishclustercases|pvalue_two_sided|pvalue_one_sided|
+|Genotipo |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|N_incluster - Spanish_cluster_cases|pvalue_two_sided|pvalue_one_sided|
 |----------------------------------|--------------|---|------------|---------------------|--------------------------------|----------------|----------------|
 |1        |59            |109|39          |7                    |52                              |0.1505          |0.9613          |
 |2        |118           |218|69          |25                   |93                              |reference       |reference       |
@@ -270,16 +288,20 @@ fisher.test(Gen_RefGen, alternative = "greater")
 |9        |33            |75 |26          |12                   |21                              |0.1071          |0.06191         |
 |15       |8             |30 |6           |2                    |6                               |0.68            |0.5436          |
 
-Conclusiones : Hay un favoritismo por parte de algunos genotipos a enconytrarse en transmicion dentro de clusters españoles.
+
+- **Genotipo** = Genotipo
+- **N_incluster** = Total de aislados en clusters de transmición
+- **N** = Total de aislados
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Spanish_cluster_cases** = Numero de aislados españoles en clusters de solo españoles
+- **N_incluster - Spanish_cluster_cases** = Numero de aislados que no pertenecen a clusters de solo españoles
 
 output: **Transmission_in_Spanish_ref1 & Transmission_in_Spanish_ref2**
 
-### Tablas de cluster
+### Tabla de cluster
 Obtuve estos datos de forma manual **ver genotipo 8**
 
-La tabal sirve para ver cuantos clusters son españoles o mixtos referentes al total de clusters en cada genotipo (ultimas 3 columnas).
-
-|Genotipo                          |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|Spanish_clusters2.0|Mixed_clusters|Total_clusters|
+|Genotipo                          |N_incluster   |N  |Sp_incluster|Spanish_cluster_cases|Spanish_clusters|Mixed_clusters|Total_clusters|
 |----------------------------------|--------------|---|------------|---------------------|-------------------|--------------|--------------|
 |1                                 |59            |109|39          |7                    |2                  |12            |14            |
 |2                                 |118           |218|69          |25                   |8                  |19            |27            |
@@ -289,6 +311,15 @@ La tabal sirve para ver cuantos clusters son españoles o mixtos referentes al t
 |8                                 |69            |151|51          |35                   |14                 |6             |20            |
 |9                                 |33            |75 |26          |12                   |4                  |5             |9             |
 |15                                |8             |30 |6           |2                    |1                  |2             |3             |
+
+- **Genotipo** = Genotipo
+- **N_incluster** = Total de aislados en clusters de transmición
+- **N** = Total de aislados
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Spanish_cluster_cases** = Numero de aislados españoles en clusters de solo españoles
+- **Spanish_clusters** =  Numero de clusters españoles
+- **Mixed_clusters** = Numero de clusters mixtos
+- **Total_clusters** = Total de clusters
 
 ### Equivalencia de genotipos Baps Carlos con Baps Irving
 
@@ -304,14 +335,6 @@ Tabla de equivalencia de los genotipos (N = 16, n = 8)
 |8       |BAPS_09   |
 |9       |BAPS_11   |
 |15      |BAPS_02   |
-
->Comparamos contra los genotipos obtenidos por Irving y observamos que contienen las mismas muestras.
-
->Genotipo5 Carlos
-![](assets/Proyecto_BAPS-37c40f42.png)
-
->BAPS6 Irving
-![](assets/Proyecto_BAPS-84554545.png)
 
 ### Perspectivas y conclusiones (Abstract para congreso)
 
