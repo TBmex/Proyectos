@@ -1,13 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 22 de abril (9:30 am)**
-- Tema: "Preparación de librerías de NGS" :dna: :lab_coat:
-- Presenta: **Manoli** :es: :boot: :woman_scientist: :crown:
+#### Jueves 22 de abril (9:30 am? 10:30?)
+- Tema: "Preparación de librerías de NGS" :lab_coat: :dna:
+- Presenta: **Manuela Torres-Puente** :es: :boot: :woman_scientist: :crown:
 - Modalidad: Lab meeting - ONLINE
 - Links: [Click para Zoom](https://us02web.zoom.us/j/83166525016?pwd=c2tDbUZ3Ni8rQ29KM0UwNm51aWtlQT09) :movie_camera:
 
-### **Jueves 15 abril (9:30 am)**
+## **Jueves 15 abril (9:30 am)**
 - Tema: "Posible asunto relacionado con TB" :dna:
 - Presenta: **Álvaro Chiner-Oms** :es: :circus_tent:
 - Modalidad: Lab meeting - ONLINE
@@ -26,21 +26,22 @@ Opcion democratica para elegir al siguiente participante: [Click aqui](https://w
 
 ##### Participantes:
 
-  - Francisco
-  - Vicky
-  - Carla
-  - Carlos
-  - Miguel
-  - Luis
-  - Mariana
-  - Irving
-  - Belen
-  - Santi
-  - Inma
-  - Manoli
-  - Iñaki
+  - Francisco :es:
+  - Vicky :es: :biohazard:
+  - Carla :es:
+  - Carlos :mexico:
+  - Miguel :es:
+  - Luis :es: :biohazard:
+  - Mariana :argentina:
+  - Irving :mexico:
+  - Belen :es:
+  - Santi :es: :computer_mouse:
+  - Inma :es:
+  - Manoli :es: :boot:
+  - Iñaki :es:
 
 ##### Ya han presentado
 
-  - Alvaro
-  - Ana
+  - Alvaro :es: :circus_tent:
+  - Ana :es: :cat:
+  - Galo :switzerland:
