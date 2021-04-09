@@ -1,5 +1,39 @@
 ### Proyecto Bottleneck
 
+En: /home/carlos/zrun_bottleneck
+
+En yersin:
+scp carlos@koch.ibv.csic.es:/home/carlos/zrun_bottleneck/*.DR.snp.final .
+
+Es una forma que nosotsotros pensamos
+
+y es esto y esto
+
+Nosotros elegimos 4 baps inferiores, y los elegimos por estos criterios.
+
+Presentacion pequena de 3 a 4 diapositivas
+Grafisco, cuales elegi, explicar variables
+ y por que los elegi
+Hacer obbs ratio de variables
+Explicar numeors de clusters
+
+Muchos cluster s de pocos y pocos clusters de muchos
+
+Fran descargo asi: Francisco José Martínez Martínez  6:31 PM
+/data/fmartinez/MALAWI_DATASET_2020/descarga_dataset.py
+Problemita de coverage
+export LD_LIBRARY_PATH='/data/Software/miniconda3/lib/':"$LD_LIBRARY_PATH"
+
+
+Revisar el municipio de residencia, codigos postales
+
+Mycroreact XD, comentar
+
+Pipeline: mirar en el tablet posiciones i es que hay posicone sconflictivas
+
+Usar:
+$FILE.DR.snp.final $FILE.snp.indel
+
 ~~~ Bash
 
 [carlos@Koch zrun_bottleneck]$ cat *.meancov
