@@ -352,10 +352,43 @@ Tabla de equivalencia de los genotipos (N = 16, n = 8)
 >Conclusion. Valencia is a low-burden region but with a high incidence of local transmission compared to other similar TB settings. We identified 4 highly specific genotypes in which the preference for infecting the Spanish-born population was greater. These observations suggest that there are few mycobacterial genotypes that are likely endemic to the Valencia region. This can be explained by social-driven factors and biology-driven factors, both not being mutually exclusive. However, our preliminary analyses on possible confounders suggests a role for biology indicating a degree of adaptation  to local populations, driving long-term transmission and fueling the TB epidemics. Experiments are planned to confirm this possibility. The coevolution of bacterial genotypes with certain human genetic backgrounds has implications to our understanding of TB disease, as a whole, and to develop biomedical targets based on the interacting loci between the host and the pathogen.
 
 ### Grafico Sp_inclusters vs Sp_nocluster
-Españoles vs Españoles no estan en Cluster
+![](assets/Proyecto_BAPS-12da5bf8.jpeg)
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Sp_nocluster** =  Numero de españoles que no se encuentran en clusters de transmición
 
 ### Grafico Spanish_cluster_cases vs Foreign_cluster_cases
-Rehacer los calculos quitando los mixtos, clusterss solo españoles vs clusters solo extranjeros
+![](assets/Proyecto_BAPS-8ab2c7fe)
+- **Spanish_cluster_cases** = Numero de aislados españoles en clusters de solo españoles
+- **Foreign_cluster_cases** = Numero de aislados NO españoles en clusters de solo NO españoles
+
+> Se calcula el **odds_ratio** basado en **Spanish_cluster_cases** vs **Foreign_cluster_cases**
+
+|Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|Foreign_cluster_cases|Mixtos_cluster_cases|odds_ratio|conf.low |conf.high|pvalue   |
+|--------|-----------|---|------------|---------------------|---------------------|--------------------|----------|---------|---------|---------|
+|1       |59         |109|39          |7                    |2                    |50                  |2.7516    |0.4543   |30.0101  |0.2825   |
+|2       |118        |218|69          |25                   |20                   |73                  |reference |reference|reference|reference|
+|3       |43         |66 |25          |15                   |10                   |18                  |1.1969    |0.3998   |3.6808   |0.8036   |
+|4       |29         |89 |19          |10                   |4                    |15                  |1.9774    |0.4773   |9.9632   |0.3611   |
+|5       |31         |66 |26          |15                   |0                    |16                  |Inf       |2.4274   |Inf      |0.0011   |
+|6       |61         |98 |34          |4                    |11                   |46                  |0.2969    |0.0597   |1.1978   |0.0747   |
+|7       |49         |79 |38          |18                   |0                    |31                  |Inf       |2.9652   |Inf      |0.0003   |
+|8       |69         |151|51          |35                   |8                    |26                  |3.4491    |1.2185   |10.6003  |0.0120   |
+|9       |33         |75 |26          |12                   |2                    |19                  |4.6893    |0.8850   |47.9528  |0.0585   |
+|10      |54         |96 |31          |15                   |9                    |30                  |1.3278    |0.4343   |4.2210   |0.6178   |
+|11      |10         |21 |1           |0                    |8                    |2                   |0.0000    |0.0000   |0.5478   |0.0047   |
+|12      |2          |2  |1           |0                    |0                    |2                   |0.0000    |0.0000   |Inf      |1.0000   |
+|13      |7          |15 |4           |0                    |0                    |7                   |0.0000    |0.0000   |Inf      |1.0000   |
+|14      |16         |35 |8           |3                    |3                    |10                  |0.8035    |0.0968   |6.6676   |1.0000   |
+|15      |8          |30 |6           |2                    |0                    |6                   |Inf       |0.1392   |Inf      |0.5005   |
+|16      |11         |27 |1           |0                    |5                    |6                   |0.0000    |0.0000   |1.0012   |0.0502   |
+
+- **Genotipo** = Genotipo
+- **N_incluster** = Total de aislados en clusters de transmición
+- **N** = Total de aislados
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Spanish_cluster_cases** = Numero de aislados españoles en clusters de solo españoles
+- **Foreign_cluster_cases** = Numero de aislados NO españoles en clusters de solo NO españoles
+- **Mixtos_cluster_cases** = Numero de aislados que pertenecen a clusters mixtos
 
 ### OR y Grafico de ... 5 asociado fuertemente a españles vs genotipo 16
 
