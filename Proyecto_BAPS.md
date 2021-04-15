@@ -350,3 +350,36 @@ Tabla de equivalencia de los genotipos (N = 16, n = 8)
 >Results. We observed six human-associated MTBC lineages with L4 being the most frequent lineage circulating in the Valencia region (92% cases). We identify 181 transmission clusters, and a high transmission rate (49%), particularly when considering only Spanish-born cases (55%). Transmission associated with alcohol abuse, and Spanish origin (p<0.001). We identified 16 genotypes by hierarchical analysis, with 4 of them almost exclusively affecting local-born population and with high clustering rate among Spanish-born individuals. 3 of those genotypes include few large transmission clusters, and 1 is composed by multiple clusters.
 
 >Conclusion. Valencia is a low-burden region but with a high incidence of local transmission compared to other similar TB settings. We identified 4 highly specific genotypes in which the preference for infecting the Spanish-born population was greater. These observations suggest that there are few mycobacterial genotypes that are likely endemic to the Valencia region. This can be explained by social-driven factors and biology-driven factors, both not being mutually exclusive. However, our preliminary analyses on possible confounders suggests a role for biology indicating a degree of adaptation  to local populations, driving long-term transmission and fueling the TB epidemics. Experiments are planned to confirm this possibility. The coevolution of bacterial genotypes with certain human genetic backgrounds has implications to our understanding of TB disease, as a whole, and to develop biomedical targets based on the interacting loci between the host and the pathogen.
+
+### Grafico Sp_inclusters vs Sp_nocluster
+Españoles vs Españoles no estan en Cluster
+
+### Grafico Spanish_cluster_cases vs Foreign_cluster_cases
+Rehacer los calculos quitando los mixtos, clusterss solo españoles vs clusters solo extranjeros
+
+### OR y Grafico de ... 5 asociado fuertemente a españles vs genotipo 16
+
+Genotipo 5 en Españoles + alguna otra variable
+Genotipo 5 en no Españoles + alguna otra variable
+
+Dividir por cuadrantes agrupar
+Genotipos Españoles 5 9 7 8 15 4 1
+Genotipos mixtos 2 3 10 6 14 12
+Genotipos no Españoles 13 11 16
+
+Para cada uno de los Genotipos
+clusters puros de españoles cual es el tamaño medio del cluster media y mediana de solo clsuertes puros
+Tamaño medio con percentiles plot
+
+Buscamos responder la pregunta si estas asociaciones son debidas a biologia o alzar
+
+plos genetic suiza sebastian
+
+
+Españoles
+
+PUEDO VER LA RELACION ENTRE LOS GENOTIPOS Y LOS LINAJES
+COMPARAR CON UN DATASET DIFERENTE
+EL ALCOHOLISMO PODRIA ESTAR INFLUYENDO, REALMENTE PIENSO QUE NO PERO DEBERIA REVISARLO.
+
+TENGO QUE VER A IÑAKI CON NUEVOS GRAFICOS, IDEAS Y OTRO PAPER PARA RELPALDARLO, INVESTIGACION
