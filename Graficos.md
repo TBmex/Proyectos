@@ -75,6 +75,7 @@
 ### OR y Grafico de "genotipos españoles" vs "genotipos no españoles" en nuestra poblacion
 > basado en HIV Infection Disrupts the Sympatric Host–Pathogen Relationship in Human Tuberculosis
 
+![](assets/Proyecto_BAPS-db75662f.png)
 
 Dividir por cuadrantes agrupar
 - Genotipos Españoles 5 9 7 8 15 4 1
