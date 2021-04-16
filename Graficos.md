@@ -86,4 +86,4 @@ Dividir por cuadrantes agrupar
 - Cual es el tamaño medio del cluster media y mediana
 - Tamaño medio con percentiles plot
 
-### Buscamos responder la pregunta si la relacion es biologia o azar
+### Buscamos responder la pregunta si la relación es biología o azar
