@@ -77,14 +77,34 @@
 
 ![](assets/Proyecto_BAPS-db75662f.png)
 
-Dividir por cuadrantes agrupar
+Dividir por cuadrantes y agrupar
 - Genotipos Españoles 5 9 7 8 15 4 1
 - Genotipos mixtos 2 3 10 6 14 12
 - Genotipos no Españoles 13 11 16
 
+|Genotipos             |Spanish_cluster_cases|NO_Spanish_cluster_cases|odds_ratio     |conf.low        |conf.high       |pvalue              |
+|----------------------|---------------------|------------------------|---------------|----------------|----------------|--------------------|
+|Genotipos_Españoles   |99                   |179                     |2.0669         |1.4031          |3.0612          |0.0001              |
+|Genotipos_mixtos      |62                   |232                     |reference      |reference       |reference       |reference           |
+
+|Genotipos             |Spanish_cluster_cases|NO_Spanish_cluster_cases|odds_ratio     |conf.low        |conf.high       |pvalue              |
+|----------------------|---------------------|------------------------|---------------|----------------|----------------|--------------------|
+|Genotipos_Españoles   |99                   |179                     |Inf            |3.8061          |Inf             |0.00001             |
+|Genotipos_NO_Españoles|0                    |28                      |reference      |reference       |reference       |reference           |
+
+### Probando basado en  HIV Infection Disrupts the Sympatric Host–Pathogen Relationship in Human Tuberculosis
+
+> No hay odds_ratio significativos.
+
+|Genotipos             |N  |N_incluster|N_NO_incluster|
+|----------------------|---|-----------|--------------|
+|Genotipos_Españoles   |599|278        |321           |
+|Genotipos_mixtos      |515|294        |221           |
+|Genotipos_NO_Españoles|63 |28         |35            |
+
+
 ### Media y mediana de clusters españoles puros
-- Para cada uno de los Genotipos
-- Cual es el tamaño medio del cluster media y mediana
-- Tamaño medio con percentiles plot
+
+![](assets/Graficos-f793acdf.jpeg)
 
 ### Buscamos responder la pregunta si la relación es biología o azar
