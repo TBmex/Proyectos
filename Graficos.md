@@ -118,6 +118,24 @@ Genotipos_NO_Españoles |25.41000        |78.83667                  |reference|r
 
 ![](assets/Graficos-f793acdf.jpeg)
 
+> Aprovechamos el grafico y contamos los eventos de eventos de transmisión
+
+|Genotipo|Evento_transmisión|
+|--------|------------------|
+|1       |5                 |
+|2       |17                |
+|3       |8                 |
+|4       |7                 |
+|5       |14                |
+|6       |2                 |
+|7       |14                |
+|8       |21                |
+|9       |8                 |
+|10      |10                |
+|14      |2                 |
+|15      |1                 |
+
+
 |Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|
 |--------|-----------|---|------------|---------------------|
 |1       |59         |109|39          |7                    |
