@@ -82,6 +82,17 @@ Dividir por cuadrantes y agrupar
 - Genotipos mixtos 2 3 10 6 14 12
 - Genotipos no Españoles 13 11 16
 
+|Genotipos             |N_sp_incluster_%|Extranjeros/totaldecasos_%|Xsquared |pvalue   |
+|----------------------|----------------|--------------------------|---------|---------|
+|Genotipos_Españoles   |74.39143        |30.99429                  |7.627    |0.006997 |
+|Genotipos_mixtos      |54.96000        |50.59333                  |reference|reference|
+
+|Genotipos             |N_sp_incluster_%|Extranjeros/totaldecasos_%|Xsquared |pvalue   |
+|----------------------|----------------|--------------------------|---------|---------|
+Genotipos_Españoles    |74.39143        |30.99429                  |44.875   |0.0004998|
+Genotipos_NO_Españoles |25.41000        |78.83667                  |reference|reference|
+
+
 |Genotipos             |Spanish_cluster_cases|NO_Spanish_cluster_cases|odds_ratio     |conf.low        |conf.high       |pvalue              |
 |----------------------|---------------------|------------------------|---------------|----------------|----------------|--------------------|
 |Genotipos_Españoles   |99                   |179                     |2.0669         |1.4031          |3.0612          |0.0001              |
@@ -94,7 +105,7 @@ Dividir por cuadrantes y agrupar
 
 ### Probando basado en  HIV Infection Disrupts the Sympatric Host–Pathogen Relationship in Human Tuberculosis
 
-> No hay odds_ratio significativos.
+> No hay asociaciones que nos digan algo.
 
 |Genotipos             |N  |N_incluster|N_NO_incluster|
 |----------------------|---|-----------|--------------|
