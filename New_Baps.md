@@ -69,12 +69,53 @@
 |8       |5  |14 |1  |3  |23   |
 |9       |2  |5  |1  |2  |10   |
 |10      |4  |5  |2  |4  |15   |
-|11      |2  |0  |0  |1  |3    |
-|12      |0  |0  |0  |1  |1    |
-|13      |3  |0  |0  |0  |3    |
-|14      |1  |0  |0  |4  |5    |
-|15      |0  |1  |0  |2  |3    |
-|16      |0  |0  |1  |2  |3    |
+
+- Genotipo = Genotipo
+- Mix = Numero de clusters mixtos
+- Sp = Numero de clusters de solo españoles
+- For = Numero de clusters de solo extranjeros
+- Na = Numero de clusters NA
+- Total = Total de clusters
 
 #### Grafico los Only Spanish Clusters y cuento su numero de eventos de transmisión
 ![](assets/New_Baps-aa8a4ba6)
+
+#### Eventos de transmisión en only spanish cluster
+|Genotipo|Sp |Eventos|
+|--------|---|-------|
+|1       |4  |15     |
+|2       |8  |22     |
+|3       |7  |8      |
+|4       |4  |9      |
+|5       |5  |18     |
+|6       |2  |2      |
+|7       |4  |14     |
+|8       |14 |21     |
+|9       |5  |12     |
+|10      |5  |10     |
+
+- Genotipo = Genotipo
+- Sp = Numero de clusters de solo españoles
+- Eventos = Numero de eventos de transmisión
+
+####
+
+|Genotipo|N_incluster|Spanish_cluster_cases|Foreing_cluster_cases|Mixes_cluster_cases|Na_cluster_cases|
+|--------|-----------|---------------------|---------------------|-------------------|----------------|
+|1       |59         |19                   |2                    |32                 |6               |
+|2       |118        |30                   |7                    |37                 |44              |
+|3       |43         |15                   |8                    |18                 |2               |
+|4       |29         |13                   |4                    |5                  |7               |
+|5       |31         |23                   |0                    |0                  |8               |
+|6       |61         |4                    |9                    |12                 |36              |
+|7       |49         |18                   |0                    |31                 |0               |
+|8       |69         |35                   |3                    |24                 |7               |
+|9       |33         |17                   |2                    |6                  |8               |
+|10      |54         |15                   |9                    |9                  |21              |
+
+- Genotipo = Genotipo
+- N_incluster = Total de aislados en clusters de transmición
+- Spanish_cluster_cases = Numero de aislados españoles en clusters de solo españoles
+- Spanish_cluster_cases = Numero de aislados extranjeros en clusters de solo extranjeros
+- Mixes_cluster_cases = Numero de casos en clusters mixtos
+- Na_cluster_cases = Numero de casos en clusters NA
