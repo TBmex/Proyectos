@@ -43,6 +43,7 @@ Opcion democratica para elegir al siguiente participante: [Click aqui](https://w
 
 ##### Ya han presentado
 
+  - Manoli :es: :boot:
   - Alvaro :es: :circus_tent:
   - Ana :es: :cat:
   - Galo :switzerland:

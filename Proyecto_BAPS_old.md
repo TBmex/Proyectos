@@ -350,3 +350,164 @@ Tabla de equivalencia de los genotipos (N = 16, n = 8)
 >Results. We observed six human-associated MTBC lineages with L4 being the most frequent lineage circulating in the Valencia region (92% cases). We identify 181 transmission clusters, and a high transmission rate (49%), particularly when considering only Spanish-born cases (55%). Transmission associated with alcohol abuse, and Spanish origin (p<0.001). We identified 16 genotypes by hierarchical analysis, with 4 of them almost exclusively affecting local-born population and with high clustering rate among Spanish-born individuals. 3 of those genotypes include few large transmission clusters, and 1 is composed by multiple clusters.
 
 >Conclusion. Valencia is a low-burden region but with a high incidence of local transmission compared to other similar TB settings. We identified 4 highly specific genotypes in which the preference for infecting the Spanish-born population was greater. These observations suggest that there are few mycobacterial genotypes that are likely endemic to the Valencia region. This can be explained by social-driven factors and biology-driven factors, both not being mutually exclusive. However, our preliminary analyses on possible confounders suggests a role for biology indicating a degree of adaptation  to local populations, driving long-term transmission and fueling the TB epidemics. Experiments are planned to confirm this possibility. The coevolution of bacterial genotypes with certain human genetic backgrounds has implications to our understanding of TB disease, as a whole, and to develop biomedical targets based on the interacting loci between the host and the pathogen.
+
+## Planteamiento de Iñaki
+
+### Grafico Sp_inclusters vs Sp_nocluster
+>Descartar genotipos 11, 12, 16, 13
+
+![](assets/Proyecto_BAPS-12da5bf8.jpeg)
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Sp_nocluster** =  Numero de españoles que no se encuentran en clusters de transmición
+
+|Genotipo|N  |Sp |No_sp|Sp_x  |Sp_incluster|Sp_nocluster|Sp_incluster_x|N_incluster|
+|--------|---|---|-----|------|------------|------------|--------------|-----------|
+|1       |109|67 |42   |0.6147|39          |28          |0.5821        |59         |
+|2       |218|120|98   |0.5505|69          |51          |0.575         |118        |
+|3       |66 |33 |33   |0.5   |25          |8           |0.7576        |43         |
+|4       |89 |58 |31   |0.6517|19          |39          |0.3276        |29         |
+|5       |66 |51 |15   |0.7727|26          |25          |0.5098        |31         |
+|6       |98 |44 |54   |0.449 |34          |10          |0.7727        |61         |
+|7       |79 |55 |24   |0.6962|38          |17          |0.6909        |49         |
+|8       |151|110|41   |0.7285|51          |59          |0.4636        |69         |
+|9       |75 |55 |20   |0.7333|26          |29          |0.4727        |33         |
+|10      |96 |46 |50   |0.4792|31          |15          |0.6739        |54         |
+|11      |21 |4  |17   |0.1905|1           |3           |0.25          |10         |
+|12      |2  |1  |1    |0.5   |1           |0           |1             |2          |
+|13      |15 |5  |10   |0.3333|4           |1           |0.8           |7          |
+|14      |35 |17 |18   |0.4857|8           |9           |0.4706        |16         |
+|15      |30 |19 |11   |0.6333|6           |13          |0.3158        |8          |
+|16      |27 |3  |24   |0.1111|1           |2           |0.3333        |11         |
+
+- **Genotipo** = Genotipo
+- **N** = Total de aislados
+- **Sp** = Total de aislados españoles
+- **No_sp** = Total de aislados NO españoles
+- **Sp_x** = Proporcion de españoles en el genotipo
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Sp_nocluster** =  Numero de españoles que no se encuentran en clusters de transmición
+- **Sp_incluster_x** = Proporcion de **"Sp_incluster"** en relacion a **"Sp"**
+- **N_incluster** = Total de aislados en clusters de transmición
+
+### Grafico Spanish_cluster_cases vs Foreign_cluster_cases
+![](assets/Proyecto_BAPS-8ab2c7fe)
+- **Spanish_cluster_cases** = Numero de aislados españoles en clusters de solo españoles
+- **Foreign_cluster_cases** = Numero de aislados NO españoles en clusters de solo NO españoles
+
+> Se calcula el **odds_ratio** basado en **Spanish_cluster_cases** vs **Foreign_cluster_cases**
+
+> Genotipos 5 y 7 no poseen Foreign_cluster_cases, pero si Spanish_cluster_cases 15 y 18 casos.
+
+> Descartar genotipo 15
+
+|Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|Foreign_cluster_cases|Mixtos_cluster_cases|odds_ratio|conf.low |conf.high|pvalue   |
+|--------|-----------|---|------------|---------------------|---------------------|--------------------|----------|---------|---------|---------|
+|1       |59         |109|39          |7                    |2                    |50                  |2.7516    |0.4543   |30.0101  |0.2825   |
+|2       |118        |218|69          |25                   |20                   |73                  |reference |reference|reference|reference|
+|3       |43         |66 |25          |15                   |10                   |18                  |1.1969    |0.3998   |3.6808   |0.8036   |
+|4       |29         |89 |19          |10                   |4                    |15                  |1.9774    |0.4773   |9.9632   |0.3611   |
+|5       |31         |66 |26          |15                   |0                    |16                  |Inf       |2.4274   |Inf      |0.0011   |
+|6       |61         |98 |34          |4                    |11                   |46                  |0.2969    |0.0597   |1.1978   |0.0747   |
+|7       |49         |79 |38          |18                   |0                    |31                  |Inf       |2.9652   |Inf      |0.0003   |
+|8       |69         |151|51          |35                   |8                    |26                  |3.4491    |1.2185   |10.6003  |0.0120   |
+|9       |33         |75 |26          |12                   |2                    |19                  |4.6893    |0.8850   |47.9528  |0.0585   |
+|10      |54         |96 |31          |15                   |9                    |30                  |1.3278    |0.4343   |4.2210   |0.6178   |
+|11      |10         |21 |1           |0                    |8                    |2                   |0.0000    |0.0000   |0.5478   |0.0047   |
+|12      |2          |2  |1           |0                    |0                    |2                   |0.0000    |0.0000   |Inf      |1.0000   |
+|13      |7          |15 |4           |0                    |0                    |7                   |0.0000    |0.0000   |Inf      |1.0000   |
+|14      |16         |35 |8           |3                    |3                    |10                  |0.8035    |0.0968   |6.6676   |1.0000   |
+|15      |8          |30 |6           |2                    |0                    |6                   |Inf       |0.1392   |Inf      |0.5005   |
+|16      |11         |27 |1           |0                    |5                    |6                   |0.0000    |0.0000   |1.0012   |0.0502   |
+
+- **Genotipo** = Genotipo
+- **N_incluster** = Total de aislados en clusters de transmición
+- **N** = Total de aislados
+- **Sp_incluster** =  Numero de españoles en clusters de transmicion
+- **Spanish_cluster_cases** = Numero de aislados españoles en clusters de solo españoles
+- **Foreign_cluster_cases** = Numero de aislados NO españoles en clusters de solo NO españoles
+- **Mixtos_cluster_cases** = Numero de aislados que pertenecen a clusters mixtos
+
+### OR y Grafico de "genotipos españoles" vs "genotipos no españoles" en nuestra poblacion
+> basado en HIV Infection Disrupts the Sympatric Host–Pathogen Relationship in Human Tuberculosis
+
+![](assets/Proyecto_BAPS-db75662f.png)
+
+Dividir por cuadrantes y agrupar
+- Genotipos Españoles 5 9 7 8 15 4 1
+- Genotipos mixtos 2 3 10 6 14 12
+- Genotipos no Españoles 13 11 16
+
+|Genotipos             |N_sp_incluster_%|Extranjeros/totaldecasos_%|Xsquared |pvalue   |
+|----------------------|----------------|--------------------------|---------|---------|
+|Genotipos_Españoles   |74.39143        |30.99429                  |7.627    |0.006997 |
+|Genotipos_mixtos      |54.96000        |50.59333                  |reference|reference|
+
+|Genotipos             |N_sp_incluster_%|Extranjeros/totaldecasos_%|Xsquared |pvalue   |
+|----------------------|----------------|--------------------------|---------|---------|
+Genotipos_Españoles    |74.39143        |30.99429                  |44.875   |0.0004998|
+Genotipos_NO_Españoles |25.41000        |78.83667                  |reference|reference|
+
+
+|Genotipos             |Spanish_cluster_cases|NO_Spanish_cluster_cases|odds_ratio     |conf.low        |conf.high       |pvalue              |
+|----------------------|---------------------|------------------------|---------------|----------------|----------------|--------------------|
+|Genotipos_Españoles   |99                   |179                     |2.0669         |1.4031          |3.0612          |0.0001              |
+|Genotipos_mixtos      |62                   |232                     |reference      |reference       |reference       |reference           |
+
+|Genotipos             |Spanish_cluster_cases|NO_Spanish_cluster_cases|odds_ratio     |conf.low        |conf.high       |pvalue              |
+|----------------------|---------------------|------------------------|---------------|----------------|----------------|--------------------|
+|Genotipos_Españoles   |99                   |179                     |Inf            |3.8061          |Inf             |0.00001             |
+|Genotipos_NO_Españoles|0                    |28                      |reference      |reference       |reference       |reference           |
+
+### Probando basado en  HIV Infection Disrupts the Sympatric Host–Pathogen Relationship in Human Tuberculosis
+
+> No hay asociaciones que nos digan algo.
+
+|Genotipos             |N  |N_incluster|N_NO_incluster|
+|----------------------|---|-----------|--------------|
+|Genotipos_Españoles   |599|278        |321           |
+|Genotipos_mixtos      |515|294        |221           |
+|Genotipos_NO_Españoles|63 |28         |35            |
+
+
+### Media y mediana de clusters españoles puros
+
+![](assets/Graficos-f793acdf.jpeg)
+
+> Aprovechamos el grafico y contamos los eventos de eventos de transmisión
+
+|Genotipo|Evento_transmisión|
+|--------|------------------|
+|1       |5                 |
+|2       |17                |
+|3       |8                 |
+|4       |7                 |
+|5       |14                |
+|6       |2                 |
+|7       |14                |
+|8       |21                |
+|9       |8                 |
+|10      |10                |
+|14      |2                 |
+|15      |1                 |
+
+
+|Genotipo|N_incluster|N  |Sp_incluster|Spanish_cluster_cases|
+|--------|-----------|---|------------|---------------------|
+|1       |59         |109|39          |7                    |
+|2       |118        |218|69          |25                   |
+|3       |43         |66 |25          |15                   |
+|4       |29         |89 |19          |10                   |
+|5       |31         |66 |26          |15                   |
+|6       |61         |98 |34          |4                    |
+|7       |49         |79 |38          |18                   |
+|8       |69         |151|51          |35                   |
+|9       |33         |75 |26          |12                   |
+|10      |54         |96 |31          |15                   |
+|11      |10         |21 |1           |0                    |
+|12      |2          |2  |1           |0                    |
+|13      |7          |15 |4           |0                    |
+|14      |16         |35 |8           |3                    |
+|15      |8          |30 |6           |2                    |
+|16      |11         |27 |1           |0                    |
+
+### Buscamos responder la pregunta si la relación es biología o azar, cierro el proyecto debido a cambios en la tabla principal, rehacemos todo.
