@@ -1,6 +1,5 @@
 ##  New Frecuencies
 ### Tabla de New_Frecuencias de los 16 genotipos
-
 |Genotipo|N  |Sp |For|NA_|Sp_x |For_x|N_incluster|Sp_incluster|For_incluster|NA_incluster|Sp_incluster_x|For_incluster_x|NA_incluster_x|
 |--------|---|---|---|---|-----|-----|-----------|------------|-------------|------------|--------------|---------------|--------------|
 |1       |109|69 |36 |4  |0.633|0.330|59         |41          |15           |3           |0.695         |0.254          |0.051         |
@@ -35,3 +34,24 @@
   - Sp_incluster_x = Proporción de "Sp_incluster" en relacion a "N_incluster"
   - For_incluster_x = Proporción de "For_incluster" en relacion a "N_incluster"
   - NA_incluster_x = Proporción de "NA_incluster" en relacion a "N_incluster"
+
+#### Descarto los ultimos genotipos por diferentes razones.
+|Genotipo|N  |Sp |For|NA_|Sp_x |For_x|N_incluster|Sp_incluster|For_incluster|NA_incluster|Sp_incluster_x|For_incluster_x|NA_incluster_x|
+|--------|---|---|---|---|-----|-----|-----------|------------|-------------|------------|--------------|---------------|--------------|
+|1       |109|69 |36 |4  |0.633|0.330|59         |41          |15           |3           |0.695         |0.254          |0.051         |
+|2       |218|132|70 |16 |0.606|0.321|118        |73          |32           |13          |0.619         |0.271          |0.110         |
+|3       |66 |33 |31 |2  |0.500|0.470|43         |25          |17           |1           |0.581         |0.395          |0.023         |
+|4       |89 |61 |23 |5  |0.685|0.258|29         |20          |6            |3           |0.690         |0.207          |0.103         |
+|5       |66 |52 |8  |6  |0.788|0.121|31         |27          |1            |3           |0.871         |0.032          |0.097         |
+|6       |98 |47 |44 |7  |0.480|0.449|61         |37          |17           |7           |0.607         |0.279          |0.115         |
+|7       |79 |56 |20 |3  |0.709|0.253|49         |38          |11           |0           |0.776         |0.224          |0.000         |
+|8       |151|110|38 |3  |0.728|0.252|69         |51          |15           |3           |0.739         |0.217          |0.043         |
+|9       |75 |55 |15 |5  |0.733|0.200|33         |27          |4            |2           |0.818         |0.121          |0.061         |
+|10      |96 |46 |41 |9  |0.479|0.427|54         |32          |16           |6           |0.593         |0.296          |0.111         |
+
+#### Grafico
+
+![](assets/New_Baps-d3d646aa)
+
+- Sp_incluster_x = Proporción de "Sp_incluster" en relacion a "N_incluster"
+- For_incluster_x = Proporción de "For_incluster" en relacion a "N_incluster"
