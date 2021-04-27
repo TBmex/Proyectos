@@ -35,7 +35,7 @@
   - For_incluster_x = Proporción de "For_incluster" en relacion a "N_incluster"
   - NA_incluster_x = Proporción de "NA_incluster" en relacion a "N_incluster"
 
-#### Descarto los ultimos genotipos por diferentes razones.
+#### Genero un subset al descartar genotipos por diferentes razones
 |Genotipo|N  |Sp |For|NA_|Sp_x |For_x|N_incluster|Sp_incluster|For_incluster|NA_incluster|Sp_incluster_x|For_incluster_x|NA_incluster_x|
 |--------|---|---|---|---|-----|-----|-----------|------------|-------------|------------|--------------|---------------|--------------|
 |1       |109|69 |36 |4  |0.633|0.330|59         |41          |15           |3           |0.695         |0.254          |0.051         |
@@ -49,9 +49,32 @@
 |9       |75 |55 |15 |5  |0.733|0.200|33         |27          |4            |2           |0.818         |0.121          |0.061         |
 |10      |96 |46 |41 |9  |0.479|0.427|54         |32          |16           |6           |0.593         |0.296          |0.111         |
 
-#### Grafico
+#### Grafico las porporciones en cluster de españoles vs extranjeros
 
 ![](assets/New_Baps-d3d646aa)
 
-- Sp_incluster_x = Proporción de "Sp_incluster" en relacion a "N_incluster"
-- For_incluster_x = Proporción de "For_incluster" en relacion a "N_incluster"
+- Spanish in cluster (%) = Proporción de "Sp_incluster" en relacion a "N_incluster"
+- Foreing in cluster (%) = Proporción de "For_incluster" en relacion a "N_incluster"
+
+### Tabla de clusters
+|Genotipo|Mix|Sp |For|Na |Total|
+|--------|---|---|---|---|-----|
+|1       |9  |4  |1  |1  |15   |
+|2       |13 |8  |3  |11 |35   |
+|3       |4  |7  |3  |1  |15   |
+|4       |2  |4  |2  |3  |11   |
+|5       |0  |5  |0  |2  |7    |
+|6       |3  |2  |3  |4  |12   |
+|7       |7  |4  |0  |0  |11   |
+|8       |5  |14 |1  |3  |23   |
+|9       |2  |5  |1  |2  |10   |
+|10      |4  |5  |2  |4  |15   |
+|11      |2  |0  |0  |1  |3    |
+|12      |0  |0  |0  |1  |1    |
+|13      |3  |0  |0  |0  |3    |
+|14      |1  |0  |0  |4  |5    |
+|15      |0  |1  |0  |2  |3    |
+|16      |0  |0  |1  |2  |3    |
+
+#### Grafico los Only Spanish Clusters y cuento su numero de eventos de transmisión
+![](assets/New_Baps-aa8a4ba6)
