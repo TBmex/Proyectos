@@ -36,7 +36,7 @@
   - NA_incluster_x = Proporción de "NA_incluster" en relacion a "N_incluster"
 
 ### Genero un subset al descartar genotipos por diferentes razones
-> - N < 25 (12, 13, 11)
+- N < 25 (12, 13, 11)
 - Na_x > 0.1 (12, 14, 16, 15)
 - NA_incluster_x > 0.15 (12,14,15,16)
 - Numero de clusters < 6 (11, 12, 13, 14, 15, 16)
@@ -66,12 +66,41 @@
 
 |Genotipos   |Sp_incluster|For_incluster|Odds |pvalue|
 |------------|------------|-------------|-----|------|
-|5,9,7,8     |143         |31           |2.081|0.0014|
+|5,9,7,8     |143         |31           |2.081|0.001 |
 |1,4,2,6,10,3|228         |103          |ref  |ref   |
 
 ### Grafico Spanish cluster cases (%) VS Foreing cluster cases (%)
+#### Tabla_only_cases_cluster
+
+|Genotipo|N_incluster|Spanish_cluster_cases|%    |Foreing_cluster_cases|%    |Mixes_cluster_cases|%    |Na_cluster_cases|%    |
+|--------|-----------|---------------------|-----|---------------------|-----|-------------------|-----|----------------|-----|
+|1       |59         |19                   |0.322|2                    |0.034|32                 |0.542|6               |0.102|
+|2       |118        |30                   |0.254|7                    |0.059|37                 |0.314|44              |0.373|
+|3       |43         |15                   |0.349|8                    |0.186|18                 |0.419|2               |0.047|
+|4       |29         |13                   |0.448|4                    |0.138|5                  |0.172|7               |0.241|
+|5       |31         |23                   |0.742|0                    |0.000|0                  |0.000|8               |0.258|
+|6       |61         |4                    |0.066|9                    |0.148|12                 |0.197|36              |0.590|
+|7       |49         |18                   |0.367|0                    |0.000|31                 |0.633|0               |0.000|
+|8       |69         |35                   |0.507|3                    |0.043|24                 |0.348|7               |0.101|
+|9       |33         |17                   |0.515|2                    |0.061|6                  |0.182|8               |0.242|
+|10      |54         |15                   |0.278|9                    |0.167|9                  |0.167|21              |0.389|
+
+- Genotipo = Genotipo
+- N_incluster = Total de casos en clusters de transmición
+- Spanish_cluster_cases = Numero de casos españoles en clusters de solo españoles
+- Foreing_cluster_cases = Numero de casos extranjeros en clusters de solo extranjeros
+- Mixes_cluster_cases = Numero de casos en clusters mixtos
+- Na_cluster_cases = Numero de casos en clusters NA
+- %
 
 ![](assets/New_Baps-e8dabb1f.png)
+
+> Agrupo genotipos > 40% Spanish cluster cases
+
+|Genotipos   |Spanish_cluster_cases|Foreing_cluster_cases|Odds |pvalue|
+|------------|---------------------|---------------------|-----|------|
+|4,5,8,9     |88                   |9                    |3.135|0.002 |
+|1,2,3,6,8,10|118                  |38                   |ref  |ref   |
 
 ### Tabla de clusters
 |Genotipo|Mix|Sp |For|Na |Total|
@@ -94,6 +123,28 @@
 - Na = Numero de clusters NA
 - Total = Total de clusters
 
+![](assets/New_Baps-62393f9b.png)
+![](assets/New_Baps-2c93b771.png)
+
+
+|Genotipo|Sp |
+|--------|---|
+|1       |4  |
+|2       |8  |
+|3       |7  |
+|4       |4  |
+|5       |5  |
+|6       |2  |
+|7       |4  |
+|8       |14 |
+|9       |5  |
+|10      |5  |
+
+- Genotipo = Genotipo
+- Sp = Numero de clusters de solo españoles
+
+![](assets/New_Baps-5e660f4d.png)
+
 #### Eventos de transmisión en only spanish cluster
 |Genotipo|Sp |Eventos|
 |--------|---|-------|
@@ -112,24 +163,4 @@
 - Sp = Numero de clusters de solo españoles
 - Eventos = Numero de eventos de transmisión
 
-#### Tabla_only_cases_cluster
-
-|Genotipo|N_incluster|Spanish_cluster_cases|Foreing_cluster_cases|Mixes_cluster_cases|Na_cluster_cases|
-|--------|-----------|---------------------|---------------------|-------------------|----------------|
-|1       |59         |19                   |2                    |32                 |6               |
-|2       |118        |30                   |7                    |37                 |44              |
-|3       |43         |15                   |8                    |18                 |2               |
-|4       |29         |13                   |4                    |5                  |7               |
-|5       |31         |23                   |0                    |0                  |8               |
-|6       |61         |4                    |9                    |12                 |36              |
-|7       |49         |18                   |0                    |31                 |0               |
-|8       |69         |35                   |3                    |24                 |7               |
-|9       |33         |17                   |2                    |6                  |8               |
-|10      |54         |15                   |9                    |9                  |21              |
-
-- Genotipo = Genotipo
-- N_incluster = Total de casos en clusters de transmición
-- Spanish_cluster_cases = Numero de casos españoles en clusters de solo españoles
-- Foreing_cluster_cases = Numero de casos extranjeros en clusters de solo extranjeros
-- Mixes_cluster_cases = Numero de casos en clusters mixtos
-- Na_cluster_cases = Numero de casos en clusters NA
+![](assets/New_Baps-fa1e494a.png)
