@@ -123,9 +123,8 @@
 - Na = Numero de clusters NA
 - Total = Total de clusters
 
-![](assets/New_Baps-62393f9b.png)
-![](assets/New_Baps-2c93b771.png)
-
+![](assets/New_Baps-d186639d.png)
+![](assets/New_Baps-d872ffe0.png)
 
 |Genotipo|Sp |Spanish_cluster_cases|
 |--------|---|---------------------|
