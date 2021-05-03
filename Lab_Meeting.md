@@ -1,7 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Viernes 23 de abril (9:30 am)**
+### **Jueves 6 de mayo (9:30 am)**
+- Tema: "CRISPRi: fundamento de la técnica y aplicación en el laboratorio" :lab_coat: :dna:
+- Presenta: **Victoria Furió** :es: :biohazard:
+- Modalidad: Lab meeting - ONLINE
+- Links: [Click para Zoom](https://us02web.zoom.us/j/83166525016?pwd=c2tDbUZ3Ni8rQ29KM0UwNm51aWtlQT09) :movie_camera:
+
+#### **Viernes 23 de abril (9:30 am)**
 - Tema: "Preparación de librerías de NGS" :lab_coat: :dna:
 - Presenta: **Manuela Torres-Puente** :es: :boot: :woman_scientist: :crown:
 - Modalidad: Lab meeting - ONLINE
@@ -26,24 +32,24 @@ Opcion democratica para elegir al siguiente participante: [Click aqui](https://w
 
 ##### Participantes:
 
-  - Francisco :es:
-  - Vicky :es: :biohazard:
-  - Carla :es:
-  - Carlos :mexico:
-  - Miguel :es:
-  - Luis :es: :biohazard:
-  - Mariana :argentina:
-  - Irving :mexico:
-  - Belen :es:
-  - Santi :es: :computer_mouse:
-  - Inma :es:
-  - Manoli :es: :boot:
-  - Iñaki :es:
-  - Pablo :es:
+- Francisco
+- Carla
+- Carlos
+- Miguel
+- Luis
+- Mariana
+- Irving
+- Belen
+- Santi
+- Inma
+- Manoli
+- Iñaki
+- Pablo
 
 ##### Ya han presentado
 
-  - Manoli :es: :boot:
-  - Alvaro :es: :circus_tent:
-  - Ana :es: :cat:
-  - Galo :switzerland:
+- Vicky :es: :biohazard:
+- Manoli :es: :boot:
+- Alvaro :es: :circus_tent:
+- Ana :es: :cat:
+- Galo :switzerland:
