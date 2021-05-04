@@ -5,7 +5,7 @@
 - Tema: "CRISPRi: fundamento de la técnica y aplicación en el laboratorio" :lab_coat: :dna:
 - Presenta: **Victoria Furió** :es: :biohazard:
 - Modalidad: Lab meeting - ONLINE
-- Links: [Click para Zoom](https://us02web.zoom.us/j/83166525016?pwd=c2tDbUZ3Ni8rQ29KM0UwNm51aWtlQT09) :movie_camera:
+- Links: [Click para Zoom](https://conectaha.csic.es/b/ina-2qo-r3c-4xc) :movie_camera:
 
 #### **Viernes 23 de abril (9:30 am)**
 - Tema: "Preparación de librerías de NGS" :lab_coat: :dna:

@@ -20,14 +20,14 @@
 |16      |27 |3  |21 |3  |0.111|0.778|0.111|11         |1           |8            |2           |0.091         |0.727          |0.182         |
 
 - Genotipo = Genotipo
-- N = Total de aislados
-- Sp = Total de aislados españoles
-- For = Total de aislados extranjeros
-- NA_ = Total de aislados NA
+- N = Total de casos
+- Sp = Total de casos españoles
+- For = Total de casos extranjeros
+- NA_ = Total de casos NA
   - Sp_x = Proporcion de españoles en el genotipo
   - For_x = Proporcion de extranjeros en el genotipo
   - NA_x = Proporcion de NA en el genotipo
-- N_incluster = Total de aislados en clusters de transmisión
+- N_incluster = Total de casos en clusters de transmisión
   - Sp_incluster = Numero de españoles en clusters de transmisión
   - For_incluster = Numero de extranjeros en clusters de transmisión
   - NA_incluster = Numero de NA en clusters de transmisión
@@ -163,3 +163,15 @@
 - Eventos = Numero de eventos de transmisión
 
 ![](assets/New_Baps-fa1e494a.png)
+
+### Sp_incluster VS Sp_nocluster
+
+
+### Grafico Sp_incluster VS Percent of foreing
+
+![](assets/New_Baps-fb6d5319.png)
+
+- Percent of foreing = For_x (Proporcion de extranjeros en el genotipo)
+- "Sp_incluster" / "N_incluster" = Sp_incluster_x (Proporción de "Sp_incluster" en relacion a "N_incluster")
+    - Sp_incluster = Numero de casos españoles en clusters de transmisión
+    - N_incluster = Total de casos en clusters de transmisión
