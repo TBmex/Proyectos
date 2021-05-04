@@ -27,8 +27,8 @@
 
 ![](assets/Lab_M-5c6ef917.jpg)
 
-Opcion no democratica: Voluntarios o Afortunados
-Opcion democratica para elegir al siguiente participante: [Click aqui](https://www.random.org/lists/)
+- Opcion no democratica: Voluntarios o Afortunados
+- Opcion democratica para elegir al siguiente participante: [Click aqui](https://www.random.org/lists/)
 
 ##### Participantes:
 
