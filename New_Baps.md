@@ -102,6 +102,20 @@
 |4,5,8,9     |88                   |9                    |3.135|0.002 |
 |1,2,3,6,8,10|118                  |38                   |ref  |ref   |
 
+### Genotipos por casos
+> 65% de españoles en Genotipos 5,7,8,9
+
+![](assets/New_Baps-3d13ed82)
+
+### Genotipos por casos en clusters
+> 75% de españoles en cluster en Genotipos 5,8,9
+
+![](assets/New_Baps-977b1344)
+
+## Grafico Sp_incluster VS Sp
+
+![](assets/New_Baps-6fb3d544.png)
+
 ### Tabla de clusters
 |Genotipo|Mix|Sp |For|Na |Total|
 |--------|---|---|---|---|-----|
