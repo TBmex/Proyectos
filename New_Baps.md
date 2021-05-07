@@ -205,19 +205,21 @@
 
 > Hago un calculo de "Chi-Square Test of Independence"
 
-![](assets/New_Baps-cbb52eea.png)
+![](assets/New_Baps-5cecceef.png)
+- Positive residuals are in blue. Positive values in cells specify an attraction (positive association) between the corresponding row and column variables.
+- Negative residuals are in red. This implies a repulsion (negative association) between the corresponding row and column variables.
 
 > Hago los calculos Spanish_cluster_cases VS Mixes_cluster_cases + Foreing_cluster_cases
 
-|Genotipo|Spanish_cluster_cases|N0_Spanish_cluster_cases|Odds |pvalue|
-|--------|---------------------|------------------------|-----|------|
-|1       |19                   |34                      |1.000|1.000 |
-|2       |30                   |44                      |1.218|0.712 |
-|3       |15                   |26                      |1.032|1.000 |
-|4       |13                   |9                       |2.551|0.077 |
-|5       |23                   |0                       |Inf  |0.000 |
-|6       |4                    |21                      |0.345|0.110 |
-|7       |18                   |31                      |1.039|1.000 |
-|8       |35                   |27                      |2.302|0.039 |
-|9       |17                   |8                       |3.734|0.014 |
-|10      |15                   |18                      |1.484|0.497 |
+|Genotipo  |Spanish_cluster_cases|N0_Spanish_cluster_cases|Odds |pvalue|
+|----------|---------------------|------------------------|-----|------|
+|1         |19                   |34                      |1.000|1.000 |
+|2         |30                   |44                      |1.218|0.712 |
+|3         |15                   |26                      |1.032|1.000 |
+|4         |13                   |9                       |2.551|0.077 |
+|5/Baps_6  |23                   |0                       |Inf  |0.000 |
+|6         |4                    |21                      |0.345|0.110 |
+|7         |18                   |31                      |1.039|1.000 |
+|8         |35                   |27                      |2.302|0.039 |
+|9/Baps11  |17                   |8                       |3.734|0.014 |
+|10        |15                   |18                      |1.484|0.497 |
