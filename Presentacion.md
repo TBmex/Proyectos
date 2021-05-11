@@ -12,6 +12,7 @@
 #### Grafico, casos españoles por genotipo VS casos españoles en clusters por genotipo
 
 ![](assets/New_Baps-0c40df9d.png)
+![](assets/Presentacion-15073c12.png)
 
 ### Repito lo planteado en el trabajo de Irving
 > Grafico Sp_incluster VS Percent of foreing. Los genotipos 5 y 9 presentan mayor transmisión entre españoles y menor cantidad de casos extranjeros?

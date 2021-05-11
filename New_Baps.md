@@ -166,7 +166,7 @@
 
 ### Presentación
 #### Numero de **casos españoles** por genotipo
-> El genotipos 5 tiene un mayor porcentaje de casos españoles (> 75%)
+> El genotipo 5 tiene un mayor porcentaje de casos españoles (> 75%)
 
 ![](assets/New_Baps-3d13ed82)
 
@@ -178,9 +178,10 @@
 #### Grafico, casos españoles por genotipo VS casos españoles en clusters por genotipo
 
 ![](assets/New_Baps-0c40df9d.png)
+![](assets/New_Baps-15073c12.png)
 
 ### Repito lo planteado en el trabajo de Irving
-> Grafico Sp_incluster VS Percent of foreing. Los genotipos 5 y 9 presentan mayor transmisión entre españoles y menor cantidad de casos extranjeros.
+> Grafico Sp_incluster VS Percent of foreing. Los genotipos 5 y 9 presentan mayor transmisión entre españoles y menor cantidad de casos extranjeros?
 
 ![](assets/New_Baps-fb6d5319.png)
 
@@ -224,7 +225,7 @@ X-squared = 21.366, df = 9, p-value = 0.01112
 |9       |27          |15 |1.574|0.333 |
 |10      |32          |41 |0.687|0.258 |
 
-> Repito lo propuesto por Irving, hago los calculos Spanish_cluster_cases VS Mixes_cluster_cases + Foreing_cluster_cases
+> Repito lo propuesto por Irving, hago los calculos Spanish_cluster_cases VS N0_Spanish_cluster_cases (Mixes_cluster_cases + Foreing_cluster_cases)
 
 |Genotipo  |Spanish_cluster_cases|N0_Spanish_cluster_cases|Odds |pvalue|
 |----------|---------------------|------------------------|-----|------|
