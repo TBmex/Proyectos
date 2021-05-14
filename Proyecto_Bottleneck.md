@@ -1,6 +1,6 @@
 ## Proyecto Bottleneck
 
-~~~ Bash
+~~~ bash
 # Media & Mediana de genomas
 [carlos@Koch zrun_bottleneck]$ cat *.meancov
 
@@ -44,10 +44,10 @@ From the initial list of variants, we applied a mapping filter that discarded va
 
 
 #### 1. ART Profiler
-~~~ Bash
+~~~ bash
 ART_profiler_illumina/art_profiler_illumina G1180.error G1180_error_profile/ fastq
 
-#USAGE:
+USAGE:
 	./art_profiler_illumina output_profile_name input_fastq_dir fastq_filename_extension [max_number_threads]
 
 PARAMETERS:
@@ -61,7 +61,7 @@ PARAMETERS:
 #### 2. ART Illumina
 > Los datos para ciertos parametros se obtienen en los reportes de las librerias (drive)
 
-~~~ Bash
+~~~ bash
 #ART read simulation from MTB_ancestor
 cat simNumber.txt | xargs -I {} -P 12 ~/ART/art_bin_MountRainier/art_illumina -p -1 G1180.error.txt -2 G1180.error.txt -na -i MTB_ancestor_reference.fasta -l 300 -f 350 -m 750 -s 500 -o sim{}\_R
 
@@ -83,7 +83,7 @@ ls *fq | cut -d"_" -f1 | xargs -I {} -P 9 ~/ThePipeline/ThePipeline mapping -f {
 rm *fq
 rm *metrix
 ~~~
-~~~
+~~~ bash
 -l   Tamaño de las reads en este caso: 300 (MiSeq)
 -f   Profundidad en este caso: "373.0" / 350
 -m   Tamaño medio de la fragmentacion de librerias: "758" / 750
