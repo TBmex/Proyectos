@@ -5,7 +5,7 @@
 - Tema: "Evaluating tuberculosis transmission dynamics in Valencia to define targeted public health actions" :lab_coat: :dna: :microbe:
 - Presenta: **Irving Cancino-Muñoz** :mexico: :monocle_face:
 - Modalidad: Lab meeting - ONLINE
-- Links: [Click para Zoom]() :movie_camera:
+- Links: [Click para Zoom](https://conectaha.csic.es/b/ina-2qo-r3c-4xc) :movie_camera:
 
 #### **Jueves 6 de mayo (9:30 am)**
 - Tema: "CRISPRi: fundamento de la técnica y aplicación en el laboratorio" :lab_coat: :dna:
