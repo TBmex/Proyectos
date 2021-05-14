@@ -1,41 +1,7 @@
-### Proyecto Bottleneck
-
-En: /home/carlos/zrun_bottleneck
-
-En yersin:
-scp carlos@koch.ibv.csic.es:/home/carlos/zrun_bottleneck/*.DR.snp.final .
-
-Es una forma que nosotsotros pensamos
-
-y es esto y esto
-
-Nosotros elegimos 4 baps inferiores, y los elegimos por estos criterios.
-
-Presentacion pequena de 3 a 4 diapositivas
-Grafisco, cuales elegi, explicar variables
- y por que los elegi
-Hacer obbs ratio de variables
-Explicar numeors de clusters
-
-Muchos cluster s de pocos y pocos clusters de muchos
-
-Fran descargo asi: Francisco José Martínez Martínez  6:31 PM
-/data/fmartinez/MALAWI_DATASET_2020/descarga_dataset.py
-Problemita de coverage
-export LD_LIBRARY_PATH='/data/Software/miniconda3/lib/':"$LD_LIBRARY_PATH"
-
-
-Revisar el municipio de residencia, codigos postales
-
-Mycroreact XD, comentar
-
-Pipeline: mirar en el tablet posiciones i es que hay posicone sconflictivas
-
-Usar:
-$FILE.DR.snp.final $FILE.snp.indel
+## Proyecto Bottleneck
 
 ~~~ Bash
-
+# Media & Mediana de genomas
 [carlos@Koch zrun_bottleneck]$ cat *.meancov
 
 G0076BottleNeck_mean_depth	264.944949056
@@ -45,7 +11,6 @@ G76_mean_depth	56.5214263435
 G76_median_depth	58.0
 G76_genome_coverage	0.967151547354
 
-
 G1180BottleNeck_mean_depth	362.549403019
 G1180BottleNeck_median_depth	373.0
 G1180BottleNeck_genome_coverage	0.98158961558
@@ -53,26 +18,79 @@ G1180_mean_depth	158.66146341
 G1180_median_depth	165.0
 G1180_genome_coverage	0.977134927277
 
-
 G1181BottleNeck_mean_depth	208.757102975
 G1181BottleNeck_median_depth	213.0
 G1181BottleNeck_genome_coverage	0.979491478244
 G1181_mean_depth	118.291111342
 G1181_median_depth	122.0
 G1181_genome_coverage	0.975182317617
+~~~
+
+#### Plantemos usar el proceso de Miguel para limpiar y definir los SNPs
+<details>
+<summary>Bioinformatic analysis</summary>
+
+Read preprocessing was done using fastp40 to scan reads and trim low-quality ends with a mean window quality <20. We then used Kraken41 to taxonomically classify reads by means of a custom database, only keeping MTBC sequences to avoid false variants arising due to contaminant DNA. Filtered reads were mapped with BWA42 to a predicted MTBC ancestor reference sequence43 using default parameters, and processed using samtools44 and Picard45. After that, we scanned for optical and PCR duplicates to remove them, as this helps to reduce the number of artifactual variants in low-frequency ranges. Variant calling for sputum samples was carried out using the software and parameters from the calling module of the pipeline validated for sputum sample cultures at the IBV-CSIC (available at https://gitlab.com/tbgenomicsunit/ThePipeline).
+
+For a robust variant calling in surgery samples, we used three different variant callers (VarScan246, GATK’s HaplotypeCaller46,47, LoFreq48) and integrated SNPs reported by at least two of them to get a high-confidence list of low-frequency variants. VarScan2 was run with parameters “pileup2snp sample.pileup—min-coverage 20—min-reads2 4—min-avg-qual 20—min-var-freq 0.01—min-freq-for-hom 0.9—strand-filter 1”, GATK was run with parameters “-T HaplotypeCaller -R ref.fasta -I sample.bam -o sample.vcf—min-base-quality-score 20 -ploidy 1” and LoFreq was run with parameters “call-parallel—pp-threads 12 -f ref.fasta -o sample.vcf sample.bam” and “filter -i sample.vcf -v 20 -A 0.01 -Q 20 -o filtered.vcf”.
+
+From the initial list of variants, we applied a mapping filter that discarded variants that arose in repetitive genomic regions like the PE/PPE families or phages49. To establish a threshold that discarded additional false variants, we performed a synthetic read simulation. Using the ART software package50, we got the quality distribution and error profiles of our samples (using art_profiler_illumina with default parameters), and simulated 100 sequencing runs with the data (art_illumina -p −1 profile.txt -2 profile.txt -na -iref.fasta -l 150 -f 1000 -m 280 -s 137 -o out.fas). By analyzing simulations with the same pipeline, we defined a ~3% minimum frequency threshold to validate a variant in surgery samples. In addition, we extended our mapping filter to new regions that showed high-frequency SNPs in the simulations and were due to systematic mapping errors to the predicted ancestor, especially in Lineage 2 strains (see Supplementary Data 2 for a list of discarded genomic features).
+</details>
+
+#### Partimos de los archivos "*.fastq.gz", el proceso es el siguiente
+> La carpeta de trabajo esta en Koch: /data/Carlos/bottleneck_pipeline
+
+![](assets/Proyecto_Bottleneck-2563199e.png)
+
+
+#### 1. ART Profiler
+~~~ Bash
+ART_profiler_illumina/art_profiler_illumina G1180.error G1180_error_profile/ fastq
+
+#USAGE:
+	./art_profiler_illumina output_profile_name input_fastq_dir fastq_filename_extension [max_number_threads]
+
+PARAMETERS:
+#	output_profile_name:  the name of read quality profile to be generated
+#	input_fastq_dir:   the directory of input fastq or zipped fastq files
+#	fastq_filename_extension: fastq or gzipped fastq filename extension
+#	max_number_threads:: maximum number of threads/cores to be used for the run (default: all cores)
 
 ~~~
-> filter(Cluster04_Deep, SNPs==2)
-  Position Freq_D Freq_R SNPs
-1  2630158   9.00   0.00    2
-2  2630161   8.97   0.00    2
-3  3691003 100.00   0.00    2
-4  2631968   0.00  10.20    2
-5  2631971   0.00  10.61    2
-6  4120926   0.00  42.51    2
-> filter(Cluster10_Deep, SNPs==2)
-  Position Freq_D Freq_R SNPs
-1   711850  14.63   0.00    2
-2  4120926  30.93   0.00    2
-3  1404375   0.00  99.56    2
-4  4364688   0.00 100.00    2
+
+#### 2. ART Illumina
+> Los datos para ciertos parametros se obtienen en los reportes de las librerias (drive)
+
+~~~ Bash
+#ART read simulation from MTB_ancestor
+cat simNumber.txt | xargs -I {} -P 12 ~/ART/art_bin_MountRainier/art_illumina -p -1 G1180.error.txt -2 G1180.error.txt -na -i MTB_ancestor_reference.fasta -l 300 -f 350 -m 750 -s 500 -o sim{}\_R
+
+#-p   --paired   indicate a paired-end read simulation or to generate reads from both ends of amplicons
+#-1   --qprof1   the first-read quality profile
+#-2   --qprof2   the second-read quality profile
+#-na  --noALN    do not output ALN alignment file
+#-i   --in       the filename of input DNA/RNA reference
+#-l   --len      the length of reads to be simulated
+#-f   --fcov     the fold of read coverage to be simulated or number of reads/read pairs generated for each amplicon
+#-m   --mflen    the mean size of DNA/RNA fragments for paired-end simulations
+#-s   --sdev     the standard deviation of DNA/RNA fragment size for paired-end simulations
+#-o   --out      the prefix of output filename
+
+#Read mapping
+ls *fq | cut -d"_" -f1 | xargs -I {} -P 9 ~/ThePipeline/ThePipeline mapping -f {}\_R1.fq {}\_R2.fq -p {} -t 2
+
+#Remove fastq files after mapping
+rm *fq
+rm *metrix
+~~~
+~~~
+-l   Tamaño de las reads en este caso: 300 (MiSeq)
+-f   Profundidad en este caso: "373.0" / 350
+-m   Tamaño medio de la fragmentacion de librerias: "758" / 750
+-s   Desviacion estandar del Tamaño medio de la fragmentacion de librerias: 500
+~~~
+![](assets/Proyecto_Bottleneck-58a235e8.png)
+
+#### 3. Same pipeline
+
+Pendiente
