@@ -1,7 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 6 de mayo (9:30 am)**
+### **Jueves 20 de mayo (9:30 am)**
+- Tema: "Evaluating tuberculosis transmission dynamics in Valencia to define targeted public health actions" :lab_coat: :dna: :microbe:
+- Presenta: **Irving Cancino-Muñoz** :mexico: :monocle_face:
+- Modalidad: Lab meeting - ONLINE
+- Links: [Click para Zoom]() :movie_camera:
+
+#### **Jueves 6 de mayo (9:30 am)**
 - Tema: "CRISPRi: fundamento de la técnica y aplicación en el laboratorio" :lab_coat: :dna:
 - Presenta: **Victoria Furió** :es: :biohazard:
 - Modalidad: Lab meeting - ONLINE
@@ -38,7 +44,6 @@
 - Miguel
 - Luis
 - Mariana
-- Irving
 - Belen
 - Santi
 - Inma
@@ -48,6 +53,7 @@
 
 ##### Ya han presentado
 
+- Irving :mexico: :monocle_face:
 - Vicky :es: :biohazard:
 - Manoli :es: :boot:
 - Alvaro :es: :circus_tent:
