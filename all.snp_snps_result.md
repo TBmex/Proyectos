@@ -1,4 +1,15 @@
-### Tabla de ".snp_snps_result"
+### Antibiograma
+
+![](assets/all.snp_snps_result-0f6af92c.png)
+
+### Resistencias WGS
+
+![](assets/all.snp_snps_result-2875bfab.png)
+
+### Buscamos si hay posiciones de resisetencia en los archivos con terminación ".snp_snps_result", estos archivos contienen snps asociados a resistencia de cada muestra.
+
+Nota: No se encontró SNP que explique las discrepancias en la tabla.
+Nota: Los SNPs estan fijados.
 
 |Sample     |Position|Gene      |Antibiotic                                           |Freq |N_reads|WT |MUT|Codon_change|AA_change|PhyResSE       |ReSeqTB            |Comments                                    |
 |-----------|--------|----------|-----------------------------------------------------|-----|-------|---|---|------------|---------|---------------|-------------------|--------------------------------------------|
@@ -15,26 +26,40 @@
 |VH15161.snp|1673425 |inhA-fabG1|isoniazid (INH) ethionamide (ETH) prothionamide (PTO)|100  |73     |C  |T  |-           |c-15t    |High_confidence|Moderate_confidence|                                            |
 |VH15161.snp|4247429 |embB      |ethambutol (EMB)                                     |100  |74     |A  |G  |atg/gtg     |Met306Val|High_confidence|-                  |                                            |
 
+### Eligo las muestras que tienen resistencia fenotípica pero no se encontro resistencia genotípica.
 - **VH13894 Buscar resistencias a S, H, E.**
 - VH13974 OK (Coincide)
-- VH14235 OK (Se detecta resitencia a Et por WGS)
-- VH14346 OK (Sencible)
+- VH14235 OK (Se detecta resistencia a Et por WGS)
+- VH14346 OK (Sensible)
 - **VH14529 Buscar resistencia a R**
-- VH14558 OK (Sencible)
+- VH14558 OK (Sensible)
 - **VH14822 Buscar resistencia a Et**
-- VH14825 OK (Se detecta resitencia a Fq por WGS)
-- VH14832 OK (Sencible)
+- VH14825 OK (Se detecta resistencia a Fq por WGS)
+- VH14832 OK (Sensible)
 - VH15161 OK (Se detecta resistencia a H, E, Et y prothionamide por WGS)
 
-### Busqueda en .snp por muestra
+### Realice una búsqueda en el archivo ".snp" de las muestras seleccionadas.
 
 - **VH13894 Buscar resistencias a S, H, E.**
-Nada en inhA y fabG1. En katG posicion no asociada a resistencia.
-![](assets/all.snp_snps_result-806fbf91.png)
+  - gidB
+    - 4407588	| synonymous_variant | 615G>A | A205A
+  - rpsL, rrs: NA
+  - inhA, fabG1, ahpC, ndh: NA
+  - katG posicion NO asociada a resistencia.
+    - 2154724 | missense_variant | 1388T>G | L463R
+  - embA, embB, embC: NO asociadas a resistencia
+    - 4240671	| embC | missense_variant | 809T>C  | I270T
+    - 4242803	| embC | missense_variant | 2941G>C | V981L
+    - 4247646	| embB | missense_variant | 1133C>A | A378E
 
-- **VH14529 Buscar resistencia a R**, Posicion filogenetica en rpoB
-![](assets/all.snp_snps_result-8c974a6f.png)
+- **VH14529 Buscar resistencia a R**
+  - rpoB, posición filogenetica
+    - 763031 | synonymous_variant | 3225C>T | A1075A
+  - rpoC: NA
 
-- **VH14822 Buscar resistencia a Et**, Cambio cercano a fabG1
-![](assets/all.snp_snps_result-a77aeffa.png)
-ethA y ethR: Nada
+- **VH14822 Buscar resistencia a Et**
+  - etoA, mshA, inhA: NA
+  - ndhA
+    - 471666 | missense_variant | 974T>C | M325T
+
+### Conclusión: No se encontró explicación a las incongruencias entre la resistencia fenotípica y las genotípicas vistas en la tabla.
