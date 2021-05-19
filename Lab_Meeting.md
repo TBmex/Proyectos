@@ -1,6 +1,12 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
+### **Jueves 03 de junio (9:30 am)**
+- Tema: "Re-imaginando la historia natural de la tuberculosis" :lab_coat: :dna: :scroll:
+- Presenta: **Iñaki Comas** :es: :shallow_pan_of_food:
+- Modalidad: Lab meeting - ONLINE
+- Links: [Click para Zoom](https://conectaha.csic.es/b/ina-2qo-r3c-4xc) :movie_camera:
+
 ### **Jueves 20 de mayo (9:30 am)**
 - Tema: "Evaluating tuberculosis transmission dynamics in Valencia to define targeted public health actions" :lab_coat: :dna: :microbe:
 - Presenta: **Irving Cancino-Muñoz** :mexico: :monocle_face:
@@ -15,7 +21,7 @@
 
 #### **Viernes 23 de abril (9:30 am)**
 - Tema: "Preparación de librerías de NGS" :lab_coat: :dna:
-- Presenta: **Manuela Torres-Puente** :es: :boot: :woman_scientist: :crown:
+- Presenta: **Manuela Torres-Puente** :es: :boot: :woman_scientist:
 - Modalidad: Lab meeting - ONLINE
 - Links: [Click para Zoom](https://us02web.zoom.us/j/83166525016?pwd=c2tDbUZ3Ni8rQ29KM0UwNm51aWtlQT09) :movie_camera:
 
@@ -33,8 +39,8 @@
 
 ![](assets/Lab_M-5c6ef917.jpg)
 
-- Opcion no democratica: Voluntarios o Afortunados
 - Opcion democratica para elegir al siguiente participante: [Click aqui](https://www.random.org/lists/)
+- Opcion no democratica: Voluntarios o Afortunados
 
 ##### Participantes:
 
