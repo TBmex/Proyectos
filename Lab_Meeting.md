@@ -26,21 +26,21 @@
 - Links: [Click para Zoom](https://us02web.zoom.us/j/83166525016?pwd=c2tDbUZ3Ni8rQ29KM0UwNm51aWtlQT09) :movie_camera:
 
 #### Jueves 15 abril (9:30 am)
-- Tema: "Posible asunto relacionado con TB" :dna:
+- Tema: "Posible asunto relacionado con TB" (Progress of the tuberculosis and COVID-19 projects) :dna:
 - Presenta: **Álvaro Chiner-Oms** :es: :circus_tent:
 - Modalidad: Lab meeting - ONLINE
 - Links: [Click para Zoom](https://us02web.zoom.us/j/83166525016?pwd=c2tDbUZ3Ni8rQ29KM0UwNm51aWtlQT09) :movie_camera:
 
 #### Miercoles 31 marzo (9:30 am)
-- Tema: "Paper de coronavirus o la última cosa de TB" :dna:
+- Tema: "Paper de coronavirus o la última cosa de TB" (Progress of the tuberculosis and COVID-19 projects) :dna:
 - Presenta: **Álvaro Chiner-Oms** :es: :circus_tent:
 - Modalidad: Lab meeting - ONLINE
 - Links: [Click para Zoom](https://us02web.zoom.us/j/83166525016?pwd=c2tDbUZ3Ni8rQ29KM0UwNm51aWtlQT09) :movie_camera: y [Click para Paper]() :clipboard:
 
 ![](assets/Lab_M-5c6ef917.jpg)
 
-- Opcion democratica para elegir al siguiente participante: [Click aqui](https://www.random.org/lists/)
-- Opcion no democratica: Voluntarios o Afortunados
+- Opción democrática para elegir al siguiente participante: [Click aqui](https://www.random.org/lists/)
+- Opción no democrática: Voluntarios o Afortunados
 
 ##### Participantes:
 
@@ -54,11 +54,11 @@
 - Santi
 - Inma
 - Manoli
-- Iñaki
 - Pablo
 
-##### Ya han presentado
+##### Ya se han agendado:
 
+- Iñaki :es: :shallow_pan_of_food:
 - Irving :mexico: :monocle_face:
 - Vicky :es: :biohazard:
 - Manoli :es: :boot:
