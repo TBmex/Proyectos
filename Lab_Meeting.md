@@ -7,7 +7,7 @@
 - Modalidad: Lab meeting - ONLINE
 - Links: [Click para Zoom](https://conectaha.csic.es/b/ina-2qo-r3c-4xc) :movie_camera:
 
-### **Jueves 20 de mayo (9:30 am)**
+### **Jueves 20 de mayo (9:00 am)**
 - Tema: "Evaluating tuberculosis transmission dynamics in Valencia to define targeted public health actions" :lab_coat: :dna: :microbe:
 - Presenta: **Irving Cancino-Muñoz** :mexico: :monocle_face:
 - Modalidad: Lab meeting - ONLINE
