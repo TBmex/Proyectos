@@ -97,25 +97,25 @@ For a robust variant calling in surgery samples, we used three different variant
 
 ~~~ sh
 #VarScan2 was run with parameters
-pileup2snp sample.pileup—min-coverage 20—min-reads2 4—min-avg-qual 20—min-var-freq 0.01—min-freq-for-hom 0.9—strand-filter 1
+	pileup2snp sample.pileup—min-coverage 20—min-reads2 4—min-avg-qual 20—min-var-freq 0.01—min-freq-for-hom 0.9—strand-filter 1
 #Comando
 	#perform pileups before variant calling
-ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'samtools mpileup -q 30 -Q 20 -BOf /data/Databases/MTB_ancestor/MTB_ancestor_reference.fasta $1.sort.bam > "$1.pileup"' -- {}
+	ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'samtools mpileup -q 30 -Q 20 -BOf /data/Databases/MTB_ancestor/MTB_ancestor_reference.fasta $1.sort.bam > "$1.pileup"' -- {}
 	#varscan command
-ls *pileup | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'java -jar /data/ThePipeline_programs/VarScan/VarScan.v2.3.7.jar pileup2snp $1.pileup  --min-coverage 20 --min-reads2 4 --min-avg-qual 20 --min-var-freq 0.01 --min-freq-for-hom 0.9 --p-value 99e-2 --strand-filter 1 > "$1.snp"' -- {}
+	ls *pileup | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'java -jar /data/ThePipeline_programs/VarScan/VarScan.v2.3.7.jar pileup2snp $1.pileup  --min-coverage 20 --min-reads2 4 --min-avg-qual 20 --min-var-freq 0.01 --min-freq-for-hom 0.9 --p-value 99e-2 --strand-filter 1 > "$1.snp"' -- {}
 ~~~
 
 ~~~ sh
 #GATK was run with parameters
--T HaplotypeCaller -R ref.fasta -I sample.bam -o sample.vcf —min-base-quality-score 20 -ploidy 1
+	-T HaplotypeCaller -R ref.fasta -I sample.bam -o sample.vcf —min-base-quality-score 20 -ploidy 1
 #Comando para crear index
-/data/ThePipeline_programs/gatk-4.0.2.1/gatk CreateSequenceDictionary -R MTB_ancestor_reference.fasta
+	/data/ThePipeline_programs/gatk-4.0.2.1/gatk CreateSequenceDictionary -R MTB_ancestor_reference.fasta
 
-samtools faidx MTB_ancestor_reference.fasta
-samtools index sim68.sort.bam
+	samtools faidx MTB_ancestor_reference.fasta
+	for i in *.bam; do samtools index $i;done
 
 #Comando para ejecutar
-ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/ThePipeline_programs/gatk-4.0.2.1/gatk HaplotypeCaller -R MTB_ancestor_reference.fasta -I $1.sort.bam -O $1.sample.vcf --min-base-quality-score 20 -ploidy 1' -- {}
+	ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/ThePipeline_programs/gatk-4.0.2.1/gatk HaplotypeCaller -R MTB_ancestor_reference.fasta -I $1.sort.bam -O $1.sample.vcf --min-base-quality-score 20 -ploidy 1' -- {}
 ~~~
 
 ~~~ sh
