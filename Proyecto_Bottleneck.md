@@ -91,6 +91,40 @@ rm *metrix
 ~~~
 ![](assets/Proyecto_Bottleneck-58a235e8.png)
 
-#### 3. Same pipeline
+#### 3. Same pipeline, parametros propuestos por Miguel
 
-Pendiente
+For a robust variant calling in surgery samples, we used three different variant callers (VarScan246, GATK’s HaplotypeCaller46,47, LoFreq48) and integrated SNPs reported by at least two of them to get a high-confidence list of low-frequency variants.
+
+~~~ sh
+#VarScan2 was run with parameters
+pileup2snp sample.pileup—min-coverage 20—min-reads2 4—min-avg-qual 20—min-var-freq 0.01—min-freq-for-hom 0.9—strand-filter 1
+#Comando
+	#perform pileups before variant calling
+ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'samtools mpileup -q 30 -Q 20 -BOf /data/Databases/MTB_ancestor/MTB_ancestor_reference.fasta $1.sort.bam > "$1.pileup"' -- {}
+	#varscan command
+ls *pileup | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'java -jar /data/ThePipeline_programs/VarScan/VarScan.v2.3.7.jar pileup2snp $1.pileup  --min-coverage 20 --min-reads2 4 --min-avg-qual 20 --min-var-freq 0.01 --min-freq-for-hom 0.9 --p-value 99e-2 --strand-filter 1 > "$1.snp"' -- {}
+~~~
+
+~~~ sh
+#GATK was run with parameters
+-T HaplotypeCaller -R ref.fasta -I sample.bam -o sample.vcf —min-base-quality-score 20 -ploidy 1
+#Comando para crear index
+/data/ThePipeline_programs/gatk-4.0.2.1/gatk CreateSequenceDictionary -R MTB_ancestor_reference.fasta
+
+samtools faidx MTB_ancestor_reference.fasta
+samtools index sim68.sort.bam
+
+#Comando para ejecutar
+ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/ThePipeline_programs/gatk-4.0.2.1/gatk HaplotypeCaller -R MTB_ancestor_reference.fasta -I $1.sort.bam -O $1.sample.vcf --min-base-quality-score 20 -ploidy 1' -- {}
+~~~
+
+~~~ sh
+#and LoFreq was run with parameters
+ call-parallel—pp-threads 12 -f ref.fasta -o sample.vcf sample.bam
+
+#comands LoFreq call
+ ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/Software/lofreq_star-2.1.3.1/bin/lofreq call-parallel --pp-threads 12 -f MTB_ancestor_reference.fasta -o $1.lofreq.vcf $1.sort.bam' -- {}
+
+#and
+ ls *vcf | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/Software/lofreq_star-2.1.3.1/bin/lofreq filter -i $1.lofreq.vcf -v 20 -A 0.01 -Q 20 -o $1.filtered.vcf' -- {}
+~~~
