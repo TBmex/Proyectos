@@ -99,9 +99,9 @@ For a robust variant calling in surgery samples, we used three different variant
 #VarScan2 was run with parameters
 	pileup2snp sample.pileup—min-coverage 20—min-reads2 4—min-avg-qual 20—min-var-freq 0.01—min-freq-for-hom 0.9—strand-filter 1
 #Comando
-	#perform pileups before variant calling
+#perform pileups before variant calling
 	ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'samtools mpileup -q 30 -Q 20 -BOf /data/Databases/MTB_ancestor/MTB_ancestor_reference.fasta $1.sort.bam > "$1.pileup"' -- {}
-	#varscan command
+#varscan command
 	ls *pileup | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'java -jar /data/ThePipeline_programs/VarScan/VarScan.v2.3.7.jar pileup2snp $1.pileup  --min-coverage 20 --min-reads2 4 --min-avg-qual 20 --min-var-freq 0.01 --min-freq-for-hom 0.9 --p-value 99e-2 --strand-filter 1 > "$1.snp"' -- {}
 ~~~
 
