@@ -1,15 +1,3 @@
----
-title: "Untitled"
-author: "Anna Krystalli"
-date: "3/23/2018"
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    theme: cosmo
-    highlight: zenburn
----
-
 ### Presentación
 #### Numero de **casos españoles** por genotipo
 > El genotipo 5 tiene un mayor porcentaje de casos españoles (> 75%)
