@@ -238,7 +238,7 @@ These cells contribute about 37.06% to the total Chi-square score and thus accou
 |9       |27          |15 |1.574|0.333 |
 |10      |32          |41 |0.687|0.258 |
 
-> Repito lo propuesto por Irving, hago los calculos Spanish_cluster_cases VS N0_Spanish_cluster_cases (Mixes_cluster_cases + Foreing_cluster_cases)
+> Repito lo propuesto por Irving, hago los cálculos Spanish_cluster_cases VS N0_Spanish_cluster_cases (Mixes_cluster_cases + Foreing_cluster_cases)
 
 |Genotipo  |Spanish_cluster_cases|N0_Spanish_cluster_cases|Odds |pvalue|
 |----------|---------------------|------------------------|-----|------|
@@ -253,7 +253,7 @@ These cells contribute about 37.06% to the total Chi-square score and thus accou
 |**9/Baps11**  |17                   |8                       |**3.734**|**0.014** |
 |10        |15                   |18                      |1.484|0.497 |
 
-> Reviso factores de riesgo que podrian estar asociados a **Genotipo 5**, los mas destacados fueron Diabetes, Alcolismo y Neoplasia.
+> Reviso factores de riesgo que podrian estar asociados a **Genotipo 5** (Diabetes, Alcoholismo y Neoplasia)
 
 ~~~ r
 # Solo Diabetes podria representar una asociación
@@ -269,6 +269,7 @@ X-squared = 3.4503, df = 1, p-value = 0.06324
 
 #### Ideas
 
-1. ¿Los  Chi-square score de Diabetes, Alcolismo y Neoplasia podrian sumarse?, para observar si en conjunto presentan una asociación.
+1. ¿Los Chi-square score de Diabetes, Alcoholismo y Neoplasia podrían sumarse?, para observar si en conjunto presentan una asociación.
 
-2. En contruccion un arbol con el dataset de Valencia por genotipos en junto con un dataset de referencia.
+
+2. En construcción un árbol con el dataset de Valencia por genotipos en junto con un dataset de referencia.
