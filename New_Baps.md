@@ -190,6 +190,8 @@
     - Sp_incluster = Numero de casos españoles en clusters de transmisión
     - N_incluster = Total de casos en clusters de transmisión
 
+![](assets/New_Baps-139b713d.png)
+
 > Hago un calculo de "Chi-Square Test of Independence"
 
 ~~~
@@ -205,10 +207,17 @@ X-squared = 21.366, df = 9, p-value = 0.01112
 
 > Grafico de residuales
 
-![](assets/New_Baps-5cecceef.png)
+![](assets/New_Baps-e5d7fb62.png) ![](assets/New_Baps-2e04eecd.png)
+
 - Positive residuals are in blue. Positive values in cells specify an attraction (positive association) between the corresponding row and column variables.
 - Negative residuals are in red. This implies a repulsion (negative association) between the corresponding row and column variables.
 - For a given cell, the size of the circle is proportional to the amount of the cell contribution.
+
+> Grafico de contribución de residuales
+
+These cells contribute about 37.06% to the total Chi-square score and thus account for most of the difference between expected and observed values.
+
+![](assets/New_Baps-5a0b4b1b.png) ![](assets/New_Baps-a680e606.png)
 
 > Calculo Odds ratios de las variables en el grafico
 
