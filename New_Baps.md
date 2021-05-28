@@ -175,13 +175,15 @@
 
 ![](assets/New_Baps-977b1344)
 
-#### Grafico, casos españoles por genotipo VS casos españoles en clusters por genotipo
+#### Grafico, casos españoles por genotipo VS casos españoles en cluster por genotipo.
 
+##### Por porporciones
 ![](assets/New_Baps-0c40df9d.png)
+##### Por frecuencia absoluta
 ![](assets/New_Baps-15073c12.png)
 
 ### Repito lo planteado en el trabajo de Irving
-> Grafico Sp_incluster VS Percent of foreing. Los genotipos 5 y 9 presentan mayor transmisión entre españoles y menor cantidad de casos extranjeros?
+> Grafico Sp_incluster VS Percent of foreing. Los genotipos 5 y 9 presentan mayor transmisión entre españoles y menor cantidad de casos extranjeros.
 
 ![](assets/New_Baps-fb6d5319.png)
 
@@ -190,15 +192,17 @@
     - Sp_incluster = Numero de casos españoles en clusters de transmisión
     - N_incluster = Total de casos en clusters de transmisión
 
+#### Grafico de frecuencias de españoles en cluster vs numero total de extranjeros en cluster.
 ![](assets/New_Baps-139b713d.png)
 
-> Hago un calculo de "Chi-Square Test of Independence"
+> Hago un calculo de "Chi-Square Test of Independence" para todos los genotipos.
 
-~~~
+~~~ r
 Pearson's Chi-squared test
 
 data:  Tabla_Odds_Sp_incluster_For
 X-squared = 21.366, df = 9, p-value = 0.01112
+
 ~~~
 
 - Busco asociación entre españoles en cluster (Sp_incluster) y genotipos.
@@ -248,3 +252,23 @@ These cells contribute about 37.06% to the total Chi-square score and thus accou
 |**8/Baps9**   |35                   |27                      |**2.302**|**0.039** |
 |**9/Baps11**  |17                   |8                       |**3.734**|**0.014** |
 |10        |15                   |18                      |1.484|0.497 |
+
+> Reviso factores de riesgo que podrian estar asociados a **Genotipo 5**, los mas destacados fueron Diabetes, Alcolismo y Neoplasia.
+
+~~~ r
+# Solo Diabetes podria representar una asociación
+
+Genotipo DM    No_DM
+5        11    48
+All      92    822
+
+Pearson's Chi-squared test with Yates' continuity correction
+
+X-squared = 3.4503, df = 1, p-value = 0.06324
+~~~
+
+#### Ideas
+
+1. ¿Los  Chi-square score de Diabetes, Alcolismo y Neoplasia podrian sumarse?, para observar si en conjunto presentan una asociación.
+
+2. En contruccion un arbol con el dataset de Valencia por genotipos en junto con un dataset de referencia.
