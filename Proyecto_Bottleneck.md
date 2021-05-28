@@ -120,9 +120,9 @@ ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/ThePipeline_p
 
 ~~~ sh
 #LoFreq was run with parameters
- call-parallel—pp-threads 12 -f ref.fasta -o sample.vcf sample.bam
+	call-parallel—pp-threads 12 -f ref.fasta -o sample.vcf sample.bam
 #and
- filter -i sample.vcf -v 20 -A 0.01 -Q 20 -o filtered.vcf
+	filter -i sample.vcf -v 20 -A 0.01 -Q 20 -o filtered.vcf
 
 #comands LoFreq call
 ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/Software/lofreq_star-2.1.3.1/bin/lofreq call-parallel --pp-threads 12 -f MTB_ancestor_reference.fasta -o $1.lofreq.vcf $1.sort.bam' -- {}
@@ -130,6 +130,6 @@ ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/Software/lofr
 #and
 ls *vcf | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/Software/lofreq_star-2.1.3.1/bin/lofreq filter -i $1.lofreq.vcf -v 20 -A 0.01 -Q 20 -o $1.filtered.vcf' -- {}
 
- #lo introdusco en un sh para mandar nohup
+#lo introdusco en un sh para mandar nohup
 nohup ./zrun.sh &
 ~~~
