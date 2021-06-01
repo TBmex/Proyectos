@@ -103,6 +103,21 @@ simulate_G1180.sh
 ~~~
 ![](assets/Proyecto_Bottleneck-58a235e8.png)
 
+##### Scrip simulate_G1180.sh
+~~~ sh
+#BOTTLENECK READ SIMULATION AND ANALYSIS
+
+#ART read simulation from H37Rv
+cat simNumber.txt | xargs -I {} -P 12 ~/ART/art_bin_MountRainier/art_illumina -p -1 G1180.error.txt -2 G1180.error.txt -na -i MTB_ancestor_reference.fasta -l 300 -f 350 -m 750 -s 500 -o sim{}\_R
+
+#read mapping
+ls *fq | cut -d"_" -f1 | xargs -I {} -P 9 ~/ThePipeline/ThePipeline mapping -f {}\_R1.fq {}\_R2.fq -p {} -t 2
+
+#remove fastq files after mapping
+rm *fq
+rm *metrix
+~~~
+
 #### 3. Same pipeline, parametros propuestos por Miguel
 
 For a robust variant calling in surgery samples, we used three different variant callers (VarScan246, GATK’s HaplotypeCaller46,47, LoFreq48) and integrated SNPs reported by at least two of them to get a high-confidence list of low-frequency variants.
