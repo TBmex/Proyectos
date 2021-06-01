@@ -55,9 +55,15 @@ PARAMETERS:
 #	input_fastq_dir:   the directory of input fastq or zipped fastq files
 #	fastq_filename_extension: fastq or gzipped fastq filename extension
 #	max_number_threads:: maximum number of threads/cores to be used for the run (default: all cores)
-
 ~~~
 
+~~~ sh
+#run
+ART_profiler_illumina/art_profiler_illumina G0076.error G0076_error_profile/ fastq
+
+#in
+/data/Carlos/bottleneck_pipeline/ART/art_bin_MountRainier
+~~~
 #### 2. ART Illumina
 > Los datos para ciertos parametros se obtienen en los reportes de las librerias (drive)
 
