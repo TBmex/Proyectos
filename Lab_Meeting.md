@@ -1,7 +1,7 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 03 de junio (9:30 am)**
+### **Jueves 10 de junio (9:30 am)**
 - Tema: "Re-imaginando la historia natural de la tuberculosis" :lab_coat: :dna: :scroll:
 - Presenta: **Iñaki Comas** :es: :shallow_pan_of_food:
 - Modalidad: Lab meeting - ONLINE
