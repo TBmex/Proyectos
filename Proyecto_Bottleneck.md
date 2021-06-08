@@ -148,7 +148,11 @@ nohup ./varscan_calling.sh &
 /data/ThePipeline_programs/gatk-4.0.2.1/gatk CreateSequenceDictionary -R MTB_ancestor_reference.fasta
 
 samtools faidx MTB_ancestor_reference.fasta
+
+#Make .bai
 for i in *.bam; do samtools index $i;done
+# or
+parallel samtools index ::: *.bam
 
 #Comando para ejecutar
 ls *bam | cut -d"." -f1 | xargs -I {} -P 12 sh -c 'nice -n 5 /data/ThePipeline_programs/gatk-4.0.2.1/gatk HaplotypeCaller -R MTB_ancestor_reference.fasta -I $1.sort.bam -O $1.gatk.vcf --min-base-quality-score 20 -ploidy 1' -- {}

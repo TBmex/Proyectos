@@ -5,7 +5,7 @@
 - Tema: "Re-imaginando la historia natural de la tuberculosis" :lab_coat: :dna: :scroll:
 - Presenta: **Iñaki Comas** :es: :shallow_pan_of_food:
 - Modalidad: Lab meeting - ONLINE
-- Links: [Click para Zoom](https://conectaha.csic.es/b/ina-2qo-r3c-4xc) :movie_camera:
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/2060025794?pwd=M1loLzR3RTVHbDY2OGNibk83c1R6Zz09) :movie_camera:
 
 ### **Jueves 20 de mayo (9:00 am)**
 - Tema: "Evaluating tuberculosis transmission dynamics in Valencia to define targeted public health actions" :lab_coat: :dna: :microbe:
