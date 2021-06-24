@@ -1,8 +1,14 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 10 de junio (9:30 am)**
-- Tema: "Re-imaginando la historia natural de la tuberculosis" :lab_coat: :dna: :scroll:
+### **Jueves 01 de julio (9:30 am)**
+- Tema: "Re-imaginando la historia natural de la tuberculosis - PARTE 2" :lab_coat: :dna: :scroll:
+- Presenta: **Iñaki Comas** :es: :shallow_pan_of_food:
+- Modalidad: Lab meeting - ONLINE
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/2060025794?pwd=M1loLzR3RTVHbDY2OGNibk83c1R6Zz09) :movie_camera:
+
+#### **Jueves 10 de junio (9:30 am)**
+- Tema: "Re-imaginando la historia natural de la tuberculosis - PARTE 1" :lab_coat: :dna: :scroll:
 - Presenta: **Iñaki Comas** :es: :shallow_pan_of_food:
 - Modalidad: Lab meeting - ONLINE
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/2060025794?pwd=M1loLzR3RTVHbDY2OGNibk83c1R6Zz09) :movie_camera:
