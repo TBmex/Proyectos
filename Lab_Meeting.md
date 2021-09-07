@@ -1,7 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 01 de julio (9:30 am)**
+#### **Jueves 16 de septiembre (9:30 am)**
+- Tema: "Global phylogenomic analyses of Mycobacterium abscessus provide context for non cystic fibrosis infections and the evolution of antibiotic resistance" :lab_coat: :dna: :scroll:
+- Presenta: **Ana García Marín** :es: :cat:
+- Modalidad: Journal club - ONLINE
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/87313799199?pwd=MjZBcnZYdWtBOWhXTlBCaWlwWXo3dz09) :movie_camera: y [Click para Paper](https://www.nature.com/articles/s41467-021-25484-9?utm_source=dlvr.it&utm_medium=twitter) :clipboard:
+
+#### **Jueves 01 de julio (9:30 am)**
 - Tema: "Re-imaginando la historia natural de la tuberculosis - PARTE 2" :lab_coat: :dna: :scroll:
 - Presenta: **Iñaki Comas** :es: :shallow_pan_of_food:
 - Modalidad: Lab meeting - ONLINE
