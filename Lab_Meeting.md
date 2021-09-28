@@ -1,7 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Viernes 24 de septiembre (9:30 am)**
+### **Jueves 07 de octubre (9:30 am)**
+- Tema: "Genomic sequence characteristics and the empiric accuracy of short-read sequencing" :lab_coat: :dna: :scroll:
+- Presenta: **Francisco Jose Martiínez Martínez ** :es: :man_dancing:
+- Modalidad: Journal club - ONLINE??
+- Links: [Click para Zoom]() :movie_camera: y [Click para Paper](https://europepmc.org/article/PPR/PPR309875) :clipboard:
+
+#### **Viernes 24 de septiembre (9:30 am)**
 - Tema: "Global phylogenomic analyses of Mycobacterium abscessus provide context for non cystic fibrosis infections and the evolution of antibiotic resistance" :lab_coat: :dna: :scroll:
 - Presenta: **Ana García Marín** :es: :cat:
 - Modalidad: Journal club - ONLINE
