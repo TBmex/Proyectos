@@ -5,7 +5,7 @@
 - Tema: "*Mycobacterium tuberculosis* Bottleneck" :lab_coat: :dna: :scroll:
 - Presenta: **Carlos Francisco Madrazo-Moya** :mexico: :taco:
 - Modalidad: Results presentation - PRESENCIAL - Salon de actos IBV
-- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/81429007218?pwd=SzJnN3JKNUxkUXlHNmJjYm44d0NGUT09) :movie_camera:
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/81429007218?pwd=SzJnN3JKNUxkUXlHNmJjYm44d0NGUT09) :movie_camera: [Main reference](https://journals.asm.org/doi/10.1128/JVI.00171-17) :clipboard:
 
 #### **Jueves 07 de octubre (12:00 pm)**
 - Tema: "Genomic sequence characteristics and the empiric accuracy of short-read sequencing" :lab_coat: :dna: :scroll:
