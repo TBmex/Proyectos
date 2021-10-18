@@ -1,9 +1,15 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 07 de octubre (12:00 pm)**
+### **Jueves 21 de octubre (12:00 pm)**
+- Tema: "*Mycobacterium tuberculosis* Bottleneck" :lab_coat: :dna: :scroll:
+- Presenta: **Carlos Francisco Madrazo-Moya** :mexico: :taco:
+- Modalidad: Results presentation - PRESENCIAL - Salon de actos IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/81429007218?pwd=SzJnN3JKNUxkUXlHNmJjYm44d0NGUT09) :movie_camera: y [Click para Paper](https://journals.asm.org/doi/10.1128/JVI.00171-17) :clipboard:
+
+#### **Jueves 07 de octubre (12:00 pm)**
 - Tema: "Genomic sequence characteristics and the empiric accuracy of short-read sequencing" :lab_coat: :dna: :scroll:
-- Presenta: **Francisco Jose Martiínez Martínez ** :es: :man_dancing:
+- Presenta: **Francisco Jose Martiínez Martínez** :es: :man_dancing:
 - Modalidad: Journal club - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84467458855?pwd=MmZldWpYU0l6emNnUktPbjYxK3lmZz09) :movie_camera: y [Click para Paper](https://europepmc.org/article/PPR/PPR309875) :clipboard:
 
@@ -62,9 +68,7 @@
 
 ##### Participantes:
 
-- Francisco
 - Carla
-- Carlos
 - Miguel
 - Luis
 - Mariana
@@ -76,6 +80,8 @@
 
 ##### Ya se han agendado:
 
+- Carlos :mexico: :taco:
+- Francisco :es: :man_dancing:
 - Iñaki :es: :shallow_pan_of_food:
 - Irving :mexico: :monocle_face:
 - Vicky :es: :biohazard:
