@@ -1,7 +1,7 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 21 de octubre (12:00 pm)**
+### **Jueves 21 de octubre (9:30 am)**
 - Tema: "*Mycobacterium tuberculosis* Bottleneck" :lab_coat: :dna: :scroll:
 - Presenta: **Carlos Francisco Madrazo-Moya** :mexico: :taco:
 - Modalidad: Results presentation - PRESENCIAL - Salon de actos IBV
