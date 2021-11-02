@@ -1,7 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 21 de octubre (9:30 am)**
+### **Jueves 04 de noviembre (9:30 am)**
+- Tema: "*Performance of Xpert MTB/RIF Ultra for tuberculosis diagnosis in the context of passive and active case finding* " :lab_coat: :dna: :scroll:
+- Presenta: **Belén  Saavedra** :es: :mozambique:
+- Modalidad: Lab meeting - Salon de actos IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86389088701?pwd=T3c4dFBIUlY3SjRIU0hYdFFacng4UT09) :movie_camera:
+
+#### **Jueves 21 de octubre (9:30 am)**
 - Tema: "*Mycobacterium tuberculosis* Bottleneck" :lab_coat: :dna: :scroll:
 - Presenta: **Carlos Francisco Madrazo-Moya** :mexico: :taco:
 - Modalidad: Results presentation - PRESENCIAL - Salon de actos IBV
@@ -72,14 +78,12 @@
 - Miguel
 - Luis
 - Mariana
-- Belen
-- Santi
 - Inma
-- Manoli
 - Pablo
 
 ##### Ya se han agendado:
 
+- Belén :es: :mozambique:
 - Carlos :mexico: :taco:
 - Francisco :es: :man_dancing:
 - Iñaki :es: :shallow_pan_of_food:
