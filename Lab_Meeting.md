@@ -2,7 +2,7 @@
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
 ### **Jueves 04 de noviembre (9:30 am)**
-- Tema: "*Performance of Xpert MTB/RIF Ultra for tuberculosis diagnosis in the context of passive and active case finding* " :lab_coat: :dna: :scroll:
+- Tema: "*Xpatial-TB overview and brief summary of the sub-study on the diagnosis performance of Xpert Ultra in the context of PCF/ACF activities* " :lab_coat: :dna: :scroll:
 - Presenta: **Belén  Saavedra** :es: :mozambique:
 - Modalidad: Lab meeting - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86389088701?pwd=T3c4dFBIUlY3SjRIU0hYdFFacng4UT09) :movie_camera:
