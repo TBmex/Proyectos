@@ -1,7 +1,7 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 25 de noviembre (9:30 pm)**
+#### **Jueves 25 de noviembre (9:30 pm)**
 - Tema: "Diversity within sputum and clinical isolates in high burden TB countries: Mozambique and Georgia" :lab_coat: :dna: :scroll:
 - Presenta: **Carla Mariner-Llicer** :es: 🐈
 - Modalidad: Results presentation - PRESENCIAL - Salon de actos IBV
@@ -82,7 +82,6 @@
 
 - Miguel
 - Mariana
-- Inma
 
 ##### Ya se han agendado:
 
