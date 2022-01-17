@@ -1,6 +1,12 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
+### **Jueves 20 de enero (9:30 pm)**
+- Tema: "Diversity within sputum and clinical isolates in high burden TB countries: Mozambique and Georgia" :lab_coat: :dna: :scroll:
+- Presenta: **Manuela Torres-Puente** :es: :boot: :woman_scientist
+- Modalidad: Results presentation - PRESENCIAL - Salon de actos IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/87245370283?pwd=SEFTb1dwQ3RmdEsveHFpaDlzUE44UT09) :movie_camera:, [Main reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6558051/) :clipboard:
+- 
 #### **Jueves 25 de noviembre (9:30 pm)**
 - Tema: "Diversity within sputum and clinical isolates in high burden TB countries: Mozambique and Georgia" :lab_coat: :dna: :scroll:
 - Presenta: **Carla Mariner-Llicer** :es: 🐈
