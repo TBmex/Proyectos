@@ -1,13 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 20 de enero (9:30 pm)**
-- Tema: "Brainstorming: Modificación del protocolo de preparación de librerías y sus posibles implicaciones en el pipeline de análisis" :lab_coat: :dna: :scroll:
-- Presenta: **Manuela Torres-Puente** :es: :boot: :woman_scientist:
+### **Jueves 20 de enero (9:30 am)**
+- Tema: "Brainstorming: Modificación del protocolo de preparación de librerías y sus posibles implicaciones en el pipeline de análisis" :dna:
+- Presenta: **Manuela Torres-Puente**:woman_scientist:
 - Modalidad: Brainstorming - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
 
-#### **Jueves 25 de noviembre (9:30 pm)**
+#### **Jueves 25 de noviembre (9:30 am)**
 - Tema: "Diversity within sputum and clinical isolates in high burden TB countries: Mozambique and Georgia" :lab_coat: :dna: :scroll:
 - Presenta: **Carla Mariner-Llicer** :es: 🐈
 - Modalidad: Results presentation - PRESENCIAL - Salon de actos IBV
