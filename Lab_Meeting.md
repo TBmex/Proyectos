@@ -1,6 +1,12 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
+### **Jueves 03 de enero (9:30 am)**
+- Tema: "Intrapatient dynamics of early drug resistance acquisition in tuberculosis-HIV coinfection" :dna:
+- Presenta: **Miguel Moreno-Molina** :pill: :man_scientist:
+- Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
+
 ### **Jueves 20 de enero (9:30 am)**
 - Tema: "Brainstorming: Modificación del protocolo de preparación de librerías y sus posibles implicaciones en el pipeline de análisis" :dna:
 - Presenta: **Manuela Torres-Puente**:woman_scientist:
@@ -86,11 +92,11 @@
 
 ##### Participantes:
 
-- Miguel
+
 - Mariana
 
 ##### Ya se han agendado:
-
+- Miguel :pill:
 - Carla :es: 🐈
 - Belén :es: :mozambique:
 - Carlos :mexico: :taco:
