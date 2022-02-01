@@ -2,8 +2,8 @@
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
 ### **Jueves 03 de febrero (9:30 am)**
-- Tema: "Intrapatient dynamics of early drug resistance acquisition in tuberculosis-HIV coinfection" :dna:
-- Presenta: **Miguel Moreno-Molina** :pill: :man_scientist:
+- Tema: "Buenas prácticas de laboratorio-2ª parte: Tratando de evitar que se necesite resolver un puzzle (o varios) para poder trabajar con tus datos" :dna:
+- Presenta: **Manuela Torres-Puente** :pill: :man_scientist:
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
 
