@@ -1,7 +1,7 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Miercoles 16 de febrero (9:30 am)**
+### **Jueves 03 de marzo (9:30 am)**
 - Tema: "Intrapatient dynamics of early drug resistance acquisition in tuberculosis-HIV coinfection" :dna:
 - Presenta: **Miguel Moreno-Molina** :pill: :man_scientist:
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
