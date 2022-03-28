@@ -1,7 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 03 de marzo (9:30 am)**
+### **Jueves 31 de marzo (9:30 am)**
+- Tema: "XXX" :dna:
+- Presenta: **Francisco Jose Martínez Martínez** :pill: :man_scientist:
+- Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
+
+#### **Jueves 03 de marzo (9:30 am)**
 - Tema: "Intrapatient dynamics of early drug resistance acquisition in tuberculosis-HIV coinfection" :dna:
 - Presenta: **Miguel Moreno-Molina** :pill: :man_scientist:
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
@@ -33,7 +39,8 @@
 
 #### **Jueves 21 de octubre (9:30 am)**
 - Tema: "*Mycobacterium tuberculosis* Bottleneck" :lab_coat: :dna: :scroll:
-- Presenta: **Carlos Francisco Madrazo-Moya** :mexico: :taco:
+- Presenta: **Carlos 
+cisco Madrazo-Moya** :mexico: :taco:
 - Modalidad: Results presentation - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/81429007218?pwd=SzJnN3JKNUxkUXlHNmJjYm44d0NGUT09) :movie_camera: [Main reference](https://journals.asm.org/doi/10.1128/JVI.00171-17) :clipboard:
 
