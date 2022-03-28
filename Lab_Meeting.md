@@ -2,7 +2,7 @@
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
 ### **Jueves 31 de marzo (9:30 am)**
-- Tema: "XXX" :dna:
+- Tema: "Genomic determinants of antibiotic resistance in Helicobacter pylori" :dna:
 - Presenta: **Francisco Jose Martínez Martínez** :pill: :man_scientist:
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
