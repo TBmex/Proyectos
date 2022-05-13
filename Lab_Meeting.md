@@ -1,7 +1,14 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 31 de marzo (9:30 am)**
+
+### **Viernes 03 de junio (9:30 am)**
+- Tema: "Variant calling and annotation filter, application results in "The pipeline"." :dna:
+- Presenta: **Miguel Moreno-Molina, Álvaro Chiner-Oms**
+- Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
+ 
+#### **Jueves 31 de marzo (9:30 am)**
 - Tema: "Genomic determinants of antibiotic resistance in Helicobacter pylori" :dna:
 - Presenta: **Francisco Jose Martínez Martínez**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
