@@ -2,8 +2,8 @@
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
 
-### **Viernes 26 de mayo (9:30 am)**
-- Tema: "Presentacion de resultados: Variant calling & Annotation filter" :dna:
+### **Jueves 26 de mayo (9:30 am)**
+- Tema: "Presentación de resultados: Variant calling & Annotation filter" :dna:
 - Presenta: **Miguel Moreno-Molina, Álvaro Chiner-Oms, Carlos Madrazo-Moya**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
