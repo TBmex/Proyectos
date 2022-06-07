@@ -1,8 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
+### **Jueves 16 de junio (9:30 am)**
+- Tema: "" :dna:
+- Presenta: **Javier Alonso del Real**
+- Modalidad: Lab meeting - PRESENCIAL - Salas de reuniones del IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
 
-### **Jueves 26 de mayo (9:30 am)**
+#### **Jueves 26 de mayo (9:30 am)**
 - Tema: "Presentación de resultados: Variant calling & Annotation filter" :dna:
 - Presenta: **Miguel Moreno-Molina, Álvaro Chiner-Oms, Carlos Madrazo-Moya**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
