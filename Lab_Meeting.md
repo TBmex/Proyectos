@@ -1,10 +1,10 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 16 de junio (9:30 am)**
-- Tema: "" :dna:
+### **Jueves 17 de junio (9:00 am)**
+- Tema: "New Methods Increasing the Efficiency in the Use of NGS Data from Yeast of Biotechnological Interest" :dna:
 - Presenta: **Javier Alonso del Real**
-- Modalidad: Lab meeting - PRESENCIAL - Salas de reuniones del IBV
+- Modalidad: Lab meeting - PRESENCIAL - Sala de reuniones del IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/84201321238?pwd=L21MTW9waVZpQkZtZmU4VnRENi9Pdz09) :movie_camera:
 
 #### **Jueves 26 de mayo (9:30 am)**
