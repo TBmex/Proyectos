@@ -1,7 +1,7 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 17 de junio (9:00 am)**
+### **Viernes 17 de junio (9:00 am)**
 - Tema: "New Methods Increasing the Efficiency in the Use of NGS Data from Yeast of Biotechnological Interest" :dna:
 - Presenta: **Javier Alonso del Real**
 - Modalidad: Lab meeting - PRESENCIAL - Sala de reuniones del IBV
