@@ -1,7 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Viernes 17 de junio (9:00 am)**
+### **Martes 20 de Septiembre (9:30 am)**
+- Tema: "ThePipeline 2.0" :dna:
+- Presenta: **Álvaro Chiner-Oms**
+- Modalidad: Lab meeting - PRESENCIAL - Sala de reuniones del IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/85958688963?pwd=OUM2VVdGdWp1MThQL2lmVE9YUk41Zz09) :movie_camera:
+
+#### **Viernes 17 de junio (9:00 am)**
 - Tema: "New Methods Increasing the Efficiency in the Use of NGS Data from Yeast of Biotechnological Interest" :dna:
 - Presenta: **Javier Alonso del Real**
 - Modalidad: Lab meeting - PRESENCIAL - Sala de reuniones del IBV
