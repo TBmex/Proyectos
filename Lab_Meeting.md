@@ -4,7 +4,7 @@
 ### **Jueves 20 de Octubre (9:30 am)**
 - Tema: "Tuberculosis treatment failure associated with evolution of antibiotic resilience" :dna:
 - Presenta: **Victoria Furió**
-- Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
+- Modalidad: Journal club - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/85958688963?pwd=OUM2VVdGdWp1MThQL2lmVE9YUk41Zz09) :movie_camera: [Click para Paper](https://www.biorxiv.org/content/10.1101/2022.03.29.486233v1) :clipboard:
 
 #### **Martes 20 de Septiembre (9:30 am)**
