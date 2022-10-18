@@ -1,7 +1,7 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 20 de Octubre (9:30 am)**
+### **Jueves 20 de Octubre (10:30 am)**
 - Tema: "Tuberculosis treatment failure associated with evolution of antibiotic resilience" :dna:
 - Presenta: **Victoria Furió**
 - Modalidad: Journal club - PRESENCIAL - Salon de actos IBV
