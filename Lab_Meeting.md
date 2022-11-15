@@ -1,13 +1,19 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-#### **Jueves 24 de Noviembre (9:30 am)**
+#### **Jueves 15 de Diciembre (9:30 am)**
+- Tema: "Calling with Mutect2" :dna:
+- Presenta: **Álvaro Chiner-Oms**
+- Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
+- Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/85958688963?pwd=OUM2VVdGdWp1MThQL2lmVE9YUk41Zz09) :movie_camera:
+
+### **Jueves 24 de Noviembre (9:30 am)**
 - Tema: "Troubleshooting in the bioinformatic analysis of sputum samples" :dna:
 - Presenta: **Carla Mariner-Llicer**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/85958688963?pwd=OUM2VVdGdWp1MThQL2lmVE9YUk41Zz09) :movie_camera:
 
-### **Miercoles 09 de Noviembre (9:30 am)**
+#### **Miercoles 09 de Noviembre (9:30 am)**
 - Tema: "Genómica de *Mycoabcterium abcessus*" :dna:
 - Presenta: **Ana García Marín**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
