@@ -4,10 +4,10 @@
 #### **Jueves 15 de Diciembre (9:30 am)**
 - Tema: "Calling with Mutect2" :dna:
 - Presenta: **Álvaro Chiner-Oms**
-- Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
+- Modalidad: Online / Zoom
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/85958688963?pwd=OUM2VVdGdWp1MThQL2lmVE9YUk41Zz09) :movie_camera:
 
-#### **Miercoles 7 de Diciembre (9:30 am)**
+#### **Miercoles 7 de Diciembre (12:30 pm)**
 - Tema: "Impact of TB-HIV coinfection on intrapatient microevolution during early treatment" :dna:
 - Presenta: **Miguel Moreno-Molina**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
