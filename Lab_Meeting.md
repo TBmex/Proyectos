@@ -7,7 +7,7 @@
 - Modalidad: Online / Zoom
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) :movie_camera:
 
-### **Miercoles 7 de Diciembre (12:30 pm)**
+### **Miercoles 9 de Diciembre (9:00 am)**
 - Tema: "Impact of TB-HIV coinfection on intrapatient microevolution during early treatment" :dna:
 - Presenta: **Miguel Moreno-Molina**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
