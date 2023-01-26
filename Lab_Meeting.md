@@ -2,7 +2,7 @@
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
 ### **Miercoles 02 de Febrero (9:00 am)**
-- Tema: "The Pipeline 2.0" :dna:
+- Tema: "Problemas y retos pendientes de The Pipeline en predicción de resistencias" :dna:
 - Presenta: **Miguel Moreno-Molina & Mariana Gabriela López**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) :movie_camera:
