@@ -1,7 +1,7 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Miercoles 02 de Febrero (9:00 am)**
+### **Jueves 02 de Febrero (9:00 am)**
 - Tema: "Problemas y retos pendientes de The Pipeline en predicción de resistencias" :dna:
 - Presenta: **Miguel Moreno-Molina & Mariana Gabriela López**
 - Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
