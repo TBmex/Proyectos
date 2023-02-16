@@ -1,7 +1,13 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 16 de Febrero 2023 (9:30 am)**
+### **Jueves 23 de Febrero 2023 (9:30 am)**
+- Tema: "Análisis estadístico espacial de la incidencia y transmisión de la tuberculosis en la Comunidad Valenciana" :dna:
+- Presenta: **Paula Sinisterra Sebastián**
+- Modalidad: Presentación de TFM - PRESENCIAL - Salon de actos IBV
+- Link: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) 🎥
+
+#### **Jueves 16 de Febrero 2023 (9:30 am)**
 - Tema: "Genome-wide host-pathogen analyses reveal genetic interaction points in tuberculosis disease" :dna:
 - Presenta: **Francisco Jose Martínez Martínez**
 - Modalidad: Journal club - PRESENCIAL - Salon de actos IBV
