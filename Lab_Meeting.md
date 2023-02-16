@@ -1,7 +1,7 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-### **Jueves 23 de Febrero 2023 (9:30 am)**
+### **Jueves 23 de Febrero 2023 (9:00 am)**
 - Tema: "Análisis estadístico espacial de la incidencia y transmisión de la tuberculosis en la Comunidad Valenciana" :dna:
 - Presenta: **Paula Sinisterra Sebastián**
 - Modalidad: Presentación de TFM - PRESENCIAL - Salón de actos IBV
