@@ -4,24 +4,24 @@
 ### **Jueves 23 de Febrero 2023 (9:30 am)**
 - Tema: "Análisis estadístico espacial de la incidencia y transmisión de la tuberculosis en la Comunidad Valenciana" :dna:
 - Presenta: **Paula Sinisterra Sebastián**
-- Modalidad: Presentación de TFM - PRESENCIAL - Salon de actos IBV
+- Modalidad: Presentación de TFM - PRESENCIAL - Salón de actos IBV
 - Link: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) 🎥
 
 #### **Jueves 16 de Febrero 2023 (9:30 am)**
 - Tema: "Genome-wide host-pathogen analyses reveal genetic interaction points in tuberculosis disease" :dna:
 - Presenta: **Francisco Jose Martínez Martínez**
-- Modalidad: Journal club - PRESENCIAL - Salon de actos IBV
+- Modalidad: Journal club - PRESENCIAL - Salón de actos IBV
 - Link: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) 🎥 [Main reference](https://doi.org/10.1038/s41467-023-36282-w) 📋
 
 #### **Jueves 02 de Febrero 2023 (9:00 am)**
 - Tema: "Problemas y retos pendientes de The Pipeline en predicción de resistencias" :dna:
 - Presenta: **Miguel Moreno-Molina & Mariana Gabriela López**
-- Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
+- Modalidad: Lab meeting - PRESENCIAL - Salón de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) :movie_camera:
 
 #### **Jueves 26 de Enero 2023 (9:30 am)**
 - Presenta: **Iñaki Comas Espadas**
-- Modalidad: Lab meeting - PRESENCIAL - Salon de actos IBV
+- Modalidad: Lab meeting - PRESENCIAL - Salón de actos IBV
 - Links: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) :movie_camera:
 
 #### **Jueves 15 de Diciembre (9:30 am)**
