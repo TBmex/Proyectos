@@ -4,13 +4,13 @@
 Carlos Madrazo - JC 30/03/2023
 Vicky FuriÃ³ - free to decide 06/04/2023
 
-### **Jueves 23 de Marzo 2023 (9:30 am)**
+### **Jueves 23 de Marzo 2023 (9:00 am)**
 - Tema: "New Database" :dna:
 - Presenta: **Göktuğ İnal**
 - Modalidad: Lab meeting - PRESENCIAL - Salón de actos IBV
 - Link: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) 🎥
 
-### **Jueves 09 de Marzo 2023 (9:30 am)**
+### **Jueves 09 de Marzo 2023 (9:00 am)**
 - Tema: "TB-Target: Study of Host-Pathogen interactions by RNAseq ("The Microbial Side")" :dna:
 - Presenta: **Javier Alonso del Real**
 - Modalidad: Lab meeting - PRESENCIAL - Salón de actos IBV
