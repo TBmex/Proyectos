@@ -1,10 +1,11 @@
 ![](assets/Lab_M-7c6aedc6.png)
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
-Carlos Madrazo - JC 30/03/2023
-Vicky FuriÃ³ - free to decide 06/04/2023
+- Vicky Furio - free to decide 06/04/2023 - Nueva fecha?
 
-### **Jueves 23 de Marzo 2023 (9:00 am)**
+- Carlos Madrazo - JC 30/03/2023 - Nueva fecha?
+
+### **Jueves 23 de Marzo 2023 (9:00 am)** Nueva fecha?
 - Tema: "New Database" :dna:
 - Presenta: **Göktuğ İnal**
 - Modalidad: Lab meeting - PRESENCIAL - Salón de actos IBV
