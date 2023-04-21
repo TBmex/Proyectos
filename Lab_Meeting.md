@@ -2,18 +2,18 @@
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
 #### **Jueves 04 de Mayo 2023 (9:00 am)**
-- Tema: "x" :dna:
+- Tema: "" :dna:
 - Presenta: **Victoria Furió**
 - Modalidad: Lab meeting - PRESENCIAL - Salón de actos IBV
 - Link: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) 🎥
 
-#### **Jueves 27 de Abril 2023 (9:00 am)**
-- Tema: "x" :dna:
+### **Jueves 27 de Abril 2023 (9:00 am)**
+- Tema: "Mutation of Mycobacterium tuberculosis and Implications for Using Whole-Genome Sequencing for Investigating Recent Tuberculosis Transmission" :dna:
 - Presenta: **Carlos Madrazo**
-- Modalidad: Lab meeting - PRESENCIAL - Salón de actos IBV
-- Link: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) 🎥
+- Modalidad: Journal club - PRESENCIAL - Sala administrativa 3 IBV
+- Link: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) 🎥 [Main reference](https://doi.org/10.3389/fpubh.2021.790544) 📋
 
-### **Jueves 20 de Abril 2023 (9:00 am)**
+#### **Jueves 20 de Abril 2023 (9:00 am)**
 - Tema: "New Database" :dna:
 - Presenta: **Göktuğ İnal**
 - Modalidad: Lab meeting - PRESENCIAL - Salas administrativas 1-2 IBV
