@@ -2,9 +2,9 @@
 ## **Calendario de Lab meeting / Journal club** :microscope:
 
 #### **Jueves 04 de Mayo 2023 (9:00 am)**
-- Tema: "" :dna:
+- Tema: "How to generate CRISPRi-engineered M. smegmatis for fun and profit" :dna:
 - Presenta: **Victoria Furió**
-- Modalidad: Lab meeting - PRESENCIAL - Salón de actos IBV
+- Modalidad: Lab meeting - PRESENCIAL - Salas administrativas 1-2 IBV
 - Link: [Click para Zoom](https://dicv-csic-es.zoom.us/j/86704333386?pwd=V1pVc2R4MzhqSndFYmVJellUdFVtUT09) 🎥
 
 ### **Jueves 27 de Abril 2023 (9:00 am)**
